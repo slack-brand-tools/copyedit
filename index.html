@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/slack-copyedit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <h1>/slack-copyedit 🔍</h1>
+      <div class="feedback-wrapper">
+        <span class="whats-this"><button class="feedback-btn" onclick="openFeedback()">Leave feedback 👋</button>
+          <span class="whats-this-tooltip">Spotted a mistake? Got an addition for our jargon glossary? Your feedback will be routed directly to a private Slack channel.</span>
+        </span>
+      </div>
+    </div>
+    <p class="subtitle">Get rid of jargon and check your copy against Slack and Salesforce editorial guidelines.</p>
+  </header>
+
+  <!-- Feedback Modal -->
+  <div class="modal-overlay hidden" id="feedbackModal">
+    <div class="modal">
+      <div id="feedback-form">
+        <h2>Leave feedback</h2>
+        <p class="modal-subtitle">Help us improve this tool.</p>
+        <label for="feedback-text">Your feedback</label>
+        <textarea id="feedback-text" rows="4" placeholder="What's working? What could be better?"></textarea>
+        <label for="feedback-role">Your role</label>
+        <select id="feedback-role">
+          <option value="">Select...</option>
+          <option value="Writer/Copywriter">Writer / Copywriter</option>
+          <option value="Product Marketer">Product Marketer</option>
+          <option value="Web Strategist">Web Strategist</option>
+          <option value="Social Media">Social Media</option>
+          <option value="Design">Design</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="feedback-name">Your name (optional)</label>
+        <input type="text" id="feedback-name" placeholder="Name...">
+        <div class="modal-actions">
+          <button class="btn-secondary" onclick="closeFeedback()">Cancel</button>
+          <button class="btn-primary" onclick="submitFeedback()">Submit</button>
+        </div>
+      </div>
+      <div id="feedback-thanks" class="hidden">
+        <h2>Thanks for your feedback!</h2>
+        <p class="modal-subtitle">We'll use it to make this tool better.</p>
+        <div class="modal-actions">
+          <button class="btn-primary" onclick="closeFeedback()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Glossary Modal -->
+  <div class="modal-overlay hidden" id="glossaryModal" onclick="if(event.target===this)closeGlossary()">
+    <div class="modal glossary-modal">
+      <div class="glossary-header">
+        <h2>Jargon Glossary</h2>
+        <button class="btn-secondary glossary-close-btn" onclick="closeGlossary()">Close</button>
+      </div>
+      <p class="modal-subtitle">Words to avoid and what to use instead. Our copyeditor will automatically check for the following terms, and their forms (i.e. seamless, seamlessly).</p>
+      <div class="glossary-list">
+        <div class="glossary-item"><span class="glossary-term">accelerate</span><span class="glossary-suggestion">&rarr; speed up</span></div>
+        <div class="glossary-item"><span class="glossary-term">actionable</span><span class="glossary-suggestion">&rarr; functional, viable</span></div>
+        <div class="glossary-item"><span class="glossary-term">activate</span><span class="glossary-suggestion">&rarr; motivate, prompt</span></div>
+        <div class="glossary-item"><span class="glossary-term">alignment</span><span class="glossary-suggestion">&rarr; agree with, agreement</span></div>
+        <div class="glossary-item"><span class="glossary-term">at the end of the day</span><span class="glossary-suggestion">&rarr; finally, ultimately</span></div>
+        <div class="glossary-item"><span class="glossary-term">bandwidth</span><span class="glossary-suggestion">&rarr; time, availability, capacity</span></div>
+        <div class="glossary-item"><span class="glossary-term">baseline</span><span class="glossary-suggestion">&rarr; basic standard, level</span></div>
+        <div class="glossary-item"><span class="glossary-term">bespoke</span><span class="glossary-suggestion">&rarr; custom, custom fit</span></div>
+        <div class="glossary-item"><span class="glossary-term">best-in-class</span><span class="glossary-suggestion">&rarr; best</span></div>
+        <div class="glossary-item"><span class="glossary-term">blue sky</span><span class="glossary-suggestion">&rarr; limitless possibility, brainstorming</span></div>
+        <div class="glossary-item"><span class="glossary-term">business value</span><span class="glossary-suggestion">&rarr; value, benefit</span></div>
+        <div class="glossary-item"><span class="glossary-term">buzzworthy</span><span class="glossary-suggestion">&rarr; exciting</span></div>
+        <div class="glossary-item"><span class="glossary-term">COB</span><span class="glossary-suggestion">&rarr; 5:00 p.m.</span></div>
+        <div class="glossary-item"><span class="glossary-term">cutting edge</span><span class="glossary-suggestion">&rarr; advanced, leading</span></div>
+        <div class="glossary-item"><span class="glossary-term">deep dive</span><span class="glossary-suggestion">&rarr; analysis, detailed description</span></div>
+        <div class="glossary-item"><span class="glossary-term">disrupt</span><span class="glossary-suggestion">&rarr; try something different, innovate, change</span></div>
+        <div class="glossary-item"><span class="glossary-term">drive (+ abstract noun)</span><span class="glossary-suggestion">&rarr; influence, reinforce, increase, encourage, promote</span></div>
+        <div class="glossary-item"><span class="glossary-term">ecosystem</span><span class="glossary-suggestion">&rarr; environment</span></div>
+        <div class="glossary-item"><span class="glossary-term">elevate productivity</span><span class="glossary-suggestion">&rarr; raise productivity, make your teams more productive</span></div>
+        <div class="glossary-item"><span class="glossary-term">empower</span><span class="glossary-suggestion">&rarr; help, entrust</span></div>
+        <div class="glossary-item"><span class="glossary-term">enable</span><span class="glossary-suggestion">&rarr; help, turn on</span></div>
+        <div class="glossary-item"><span class="glossary-term">enablement</span><span class="glossary-suggestion">&rarr; help, facilitation, provide assistance</span></div>
+        <div class="glossary-item"><span class="glossary-term">endeavor</span><span class="glossary-suggestion">&rarr; goal</span></div>
+        <div class="glossary-item"><span class="glossary-term">end-of-life</span><span class="glossary-suggestion">&rarr; feature retirement, retire</span></div>
+        <div class="glossary-item"><span class="glossary-term">EOD</span><span class="glossary-suggestion">&rarr; this evening, by 5:00 p.m.</span></div>
+        <div class="glossary-item"><span class="glossary-term">functionality</span><span class="glossary-suggestion">&rarr; use, what it can do</span></div>
+        <div class="glossary-item"><span class="glossary-term">game changer</span><span class="glossary-suggestion">&rarr; catalyst, turning point, difference</span></div>
+        <div class="glossary-item"><span class="glossary-term">granular</span><span class="glossary-suggestion">&rarr; detailed, specific</span></div>
+        <div class="glossary-item"><span class="glossary-term">harness</span><span class="glossary-suggestion">&rarr; use</span></div>
+        <div class="glossary-item"><span class="glossary-term">hyperscale</span><span class="glossary-suggestion">&rarr; grow quickly</span></div>
+        <div class="glossary-item"><span class="glossary-term">impact (as verb)</span><span class="glossary-suggestion">&rarr; affect</span></div>
+        <div class="glossary-item"><span class="glossary-term">impactful</span><span class="glossary-suggestion">&rarr; effective</span></div>
+        <div class="glossary-item"><span class="glossary-term">incentivize</span><span class="glossary-suggestion">&rarr; encourage, provide incentive</span></div>
+        <div class="glossary-item"><span class="glossary-term">innovate</span><span class="glossary-suggestion">&rarr; introduce, invent, pioneer</span></div>
+        <div class="glossary-item"><span class="glossary-term">level set</span><span class="glossary-suggestion">&rarr; agree</span></div>
+        <div class="glossary-item"><span class="glossary-term">leverage</span><span class="glossary-suggestion">&rarr; use, using</span></div>
+        <div class="glossary-item"><span class="glossary-term">low-hanging fruit</span><span class="glossary-suggestion">&rarr; best opportunity, easiest tasks</span></div>
+        <div class="glossary-item"><span class="glossary-term">maximize</span><span class="glossary-suggestion">&rarr; make the most of</span></div>
+        <div class="glossary-item"><span class="glossary-term">mindshare</span><span class="glossary-suggestion">&rarr; awareness, attention</span></div>
+        <div class="glossary-item"><span class="glossary-term">move the needle</span><span class="glossary-suggestion">&rarr; affect, make a difference, make progress</span></div>
+        <div class="glossary-item"><span class="glossary-term">net new</span><span class="glossary-suggestion">&rarr; new</span></div>
+        <div class="glossary-item"><span class="glossary-term">next generation</span><span class="glossary-suggestion">&rarr; new, updated, improved</span></div>
+        <div class="glossary-item"><span class="glossary-term">on the same page</span><span class="glossary-suggestion">&rarr; agree, understand, align</span></div>
+        <div class="glossary-item"><span class="glossary-term">one-stop shop</span><span class="glossary-suggestion">&rarr; hub, headquarters</span></div>
+        <div class="glossary-item"><span class="glossary-term">organic</span><span class="glossary-suggestion">&rarr; spontaneous, natural</span></div>
+        <div class="glossary-item"><span class="glossary-term">out-of-the-box</span><span class="glossary-suggestion">&rarr; easy to use, creative</span></div>
+        <div class="glossary-item"><span class="glossary-term">outage</span><span class="glossary-suggestion">&rarr; service disruption</span></div>
+        <div class="glossary-item"><span class="glossary-term">paradigm</span><span class="glossary-suggestion">&rarr; model</span></div>
+        <div class="glossary-item"><span class="glossary-term">path forward</span><span class="glossary-suggestion">&rarr; direction, plan</span></div>
+        <div class="glossary-item"><span class="glossary-term">peer-to-peer</span><span class="glossary-suggestion">&rarr; conversation</span></div>
+        <div class="glossary-item"><span class="glossary-term">powerful feature</span><span class="glossary-suggestion">&rarr; be specific about what the feature does</span></div>
+        <div class="glossary-item"><span class="glossary-term">real-time</span><span class="glossary-suggestion">&rarr; up-to-the-minute, instant</span></div>
+        <div class="glossary-item"><span class="glossary-term">revolutionary</span><span class="glossary-suggestion">&rarr; exceptional, advanced, uncommon</span></div>
+        <div class="glossary-item"><span class="glossary-term">robust</span><span class="glossary-suggestion">&rarr; strong, thorough, comprehensive</span></div>
+        <div class="glossary-item"><span class="glossary-term">scale</span><span class="glossary-suggestion">&rarr; grow, expand, support more</span></div>
+        <div class="glossary-item"><span class="glossary-term">scalable</span><span class="glossary-suggestion">&rarr; growable, sustainable growth</span></div>
+        <div class="glossary-item"><span class="glossary-term">seamless</span><span class="glossary-suggestion">&rarr; smooth, easy, simple, effortless</span></div>
+        <div class="glossary-item"><span class="glossary-term">secret sauce</span><span class="glossary-suggestion">&rarr; differentiating features, unique capabilities</span></div>
+        <div class="glossary-item"><span class="glossary-term">silos</span><span class="glossary-suggestion">&rarr; departments, teams, groups</span></div>
+        <div class="glossary-item"><span class="glossary-term">socialize</span><span class="glossary-suggestion">&rarr; share</span></div>
+        <div class="glossary-item"><span class="glossary-term">speed to value</span><span class="glossary-suggestion">&rarr; fast development</span></div>
+        <div class="glossary-item"><span class="glossary-term">state-of-the-art</span><span class="glossary-suggestion">&rarr; modern, advanced, latest</span></div>
+        <div class="glossary-item"><span class="glossary-term">streamline</span><span class="glossary-suggestion">&rarr; reduce unnecessary steps, simplify</span></div>
+        <div class="glossary-item"><span class="glossary-term">supercharge</span><span class="glossary-suggestion">&rarr; improve</span></div>
+        <div class="glossary-item"><span class="glossary-term">synergy</span><span class="glossary-suggestion">&rarr; common understanding, mutual benefit, teamwork</span></div>
+        <div class="glossary-item"><span class="glossary-term">the ask</span><span class="glossary-suggestion">&rarr; request, the question</span></div>
+        <div class="glossary-item"><span class="glossary-term">total solution</span><span class="glossary-suggestion">&rarr; complete, comprehensive</span></div>
+        <div class="glossary-item"><span class="glossary-term">trailblaze</span><span class="glossary-suggestion">&rarr; innovate, invent, pioneer</span></div>
+        <div class="glossary-item"><span class="glossary-term">unleash</span><span class="glossary-suggestion">&rarr; take advantage of</span></div>
+        <div class="glossary-item"><span class="glossary-term">unlock</span><span class="glossary-suggestion">&rarr; take advantage of</span></div>
+        <div class="glossary-item"><span class="glossary-term">uplevel</span><span class="glossary-suggestion">&rarr; raise, increase</span></div>
+        <div class="glossary-item"><span class="glossary-term">user-friendly</span><span class="glossary-suggestion">&rarr; easy to use, intuitive</span></div>
+        <div class="glossary-item"><span class="glossary-term">utilize</span><span class="glossary-suggestion">&rarr; use, employ</span></div>
+        <div class="glossary-item"><span class="glossary-term">value add</span><span class="glossary-suggestion">&rarr; improve, enhance</span></div>
+        <div class="glossary-item"><span class="glossary-term">value proposition</span><span class="glossary-suggestion">&rarr; benefit</span></div>
+        <div class="glossary-item"><span class="glossary-term">value stream</span><span class="glossary-suggestion">&rarr; steps to add value</span></div>
+        <div class="glossary-item"><span class="glossary-term">viral</span><span class="glossary-suggestion">&rarr; popular</span></div>
+        <div class="glossary-item"><span class="glossary-term">visioning</span><span class="glossary-suggestion">&rarr; imagining, planning</span></div>
+        <div class="glossary-item"><span class="glossary-term">wall-to-wall</span><span class="glossary-suggestion">&rarr; company-wide, across the organization</span></div>
+        <div class="glossary-item"><span class="glossary-term">wheelhouse</span><span class="glossary-suggestion">&rarr; area of expertise, specialty</span></div>
+        <div class="glossary-item"><span class="glossary-term">world class</span><span class="glossary-suggestion">&rarr; best, outstanding</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Toast -->
+  <div class="loading-toast" id="loadingToast">
+    <span class="loading-toast-msg" id="loadingMsg"></span>
+  </div>
+
+  <main>
+    <!-- Mode Tabs -->
+    <div class="mode-tabs">
+      <div class="mode-tabs-left">
+        <button class="mode-tab active" data-mode="general">General</button>
+        <button class="mode-tab" data-mode="web">Web</button>
+        <button class="mode-tab" data-mode="social">Social</button>
+      </div>
+      <a href="#" class="glossary-link" onclick="openGlossary(); return false;">Jargon Glossary</a>
+    </div>
+
+    <!-- General Mode -->
+    <section id="mode-general" class="editor-section mode-panel">
+      <div class="editor-header">
+        <label for="input-area">Your copy</label>
+        <span id="char-count" class="char-count">0 characters</span>
+      </div>
+      <textarea id="input-area" placeholder="Paste your copy here..."></textarea>
+      <div class="editor-actions">
+        <button id="check-btn" type="button" class="btn-primary">Check copy</button>
+        <button id="clear-btn" type="button" class="btn-secondary">Clear</button>
+        <label class="toggle-label">
+          <input type="checkbox" id="live-check-toggle">
+          <span class="toggle-switch"></span>
+          Check as you type
+        </label>
+      </div>
+    </section>
+
+    <!-- Web Mode -->
+    <section id="mode-web" class="editor-section mode-panel hidden">
+      <div class="structured-fields" id="web-fields">
+        <div class="field-group">
+          <div class="field-header">
+            <label for="web-page-title">Page title / browser tab</label>
+            <span class="field-counter" data-min="30" data-max="60"><span class="field-count">0</span> / 30–60</span>
+          </div>
+          <input type="text" id="web-page-title" class="field-input" data-min="30" data-max="60" placeholder="Page title...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="web-meta">Meta description</label>
+            <span class="field-counter" data-min="145" data-max="160"><span class="field-count">0</span> / 145–160</span>
+          </div>
+          <textarea id="web-meta" class="field-input" data-min="145" data-max="160" rows="2" placeholder="Meta description..."></textarea>
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="web-eyebrow">Eyebrow</label>
+            <span class="field-counter" data-max="15"><span class="field-count">0</span> / 15</span>
+          </div>
+          <input type="text" id="web-eyebrow" class="field-input" data-max="15" placeholder="Eyebrow text (optional)...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="web-headline">H1 / Headline</label>
+            <span class="field-counter" data-max="50"><span class="field-count">0</span> / 50</span>
+          </div>
+          <input type="text" id="web-headline" class="field-input" data-max="50" placeholder="Headline...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="web-subhead">Subhead</label>
+            <span class="field-counter" data-max="150"><span class="field-count">0</span> / 150</span>
+          </div>
+          <textarea id="web-subhead" class="field-input" data-max="150" rows="2" placeholder="Subhead..."></textarea>
+        </div>
+      </div>
+      <div class="editor-actions">
+        <button class="btn-primary check-structured-btn" data-mode="web">Check copy</button>
+        <button class="btn-secondary clear-structured-btn" data-mode="web">Clear</button>
+      </div>
+    </section>
+
+    <!-- Social Mode -->
+    <section id="mode-social" class="editor-section mode-panel hidden">
+      <div class="social-platform-tabs">
+        <button class="platform-tab active" data-platform="x">X (Twitter)</button>
+        <button class="platform-tab" data-platform="linkedin">LinkedIn</button>
+        <button class="platform-tab" data-platform="facebook">Facebook</button>
+        <button class="platform-tab" data-platform="instagram">Instagram</button>
+        <button class="platform-tab" data-platform="linkedin-ads">LinkedIn Ads</button>
+        <button class="platform-tab" data-platform="email">Email</button>
+      </div>
+
+      <!-- X (Twitter) -->
+      <div class="structured-fields platform-panel" id="platform-x">
+        <div class="field-group">
+          <div class="field-header">
+            <label for="x-headline">Headline (on image)</label>
+            <span class="field-counter" data-max="40"><span class="field-count">0</span> / 40</span>
+          </div>
+          <input type="text" id="x-headline" class="field-input" data-max="40" placeholder="Headline on image...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="x-post">Post copy</label>
+            <span class="field-counter" data-max="280"><span class="field-count">0</span> / 280</span>
+          </div>
+          <textarea id="x-post" class="field-input" data-max="280" rows="3" placeholder="Post copy..."></textarea>
+          <div class="field-note">Premium accounts: 4,000 chars. URLs = 24 chars regardless of length; emojis = 2 chars each.</div>
+        </div>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="structured-fields platform-panel hidden" id="platform-linkedin">
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-headline">Headline (on image)</label>
+            <span class="field-counter" data-max="40"><span class="field-count">0</span> / 40</span>
+          </div>
+          <input type="text" id="li-headline" class="field-input" data-max="40" placeholder="Headline on image...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-post">Post copy</label>
+            <span class="field-counter" data-max="3000"><span class="field-count">0</span> / 3,000</span>
+          </div>
+          <textarea id="li-post" class="field-input" data-max="3000" rows="4" placeholder="Post copy..."></textarea>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="structured-fields platform-panel hidden" id="platform-facebook">
+        <div class="field-group">
+          <div class="field-header">
+            <label for="fb-headline">Headline (on image)</label>
+            <span class="field-counter" data-max="40"><span class="field-count">0</span> / 40</span>
+          </div>
+          <input type="text" id="fb-headline" class="field-input" data-max="40" placeholder="Headline on image...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="fb-post">Post copy</label>
+            <span class="field-counter" data-max="477"><span class="field-count">0</span> / 477</span>
+          </div>
+          <textarea id="fb-post" class="field-input" data-max="477" rows="4" placeholder="Post copy..."></textarea>
+          <div class="field-note">Truncates after ~477 chars on desktop. Full limit: 63,206 chars.</div>
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="fb-ad-headline">Ad headline</label>
+            <span class="field-counter" data-max="40"><span class="field-count">0</span> / 40</span>
+          </div>
+          <input type="text" id="fb-ad-headline" class="field-input" data-max="40" placeholder="Ad headline...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="fb-ad-desc">Ad link description</label>
+            <span class="field-counter" data-max="30"><span class="field-count">0</span> / 30</span>
+          </div>
+          <input type="text" id="fb-ad-desc" class="field-input" data-max="30" placeholder="Link description...">
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="structured-fields platform-panel hidden" id="platform-instagram">
+        <div class="field-group">
+          <div class="field-header">
+            <label for="ig-headline">Headline (on image)</label>
+            <span class="field-counter" data-max="40"><span class="field-count">0</span> / 40</span>
+          </div>
+          <input type="text" id="ig-headline" class="field-input" data-max="40" placeholder="Headline on image...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="ig-post">In-feed post copy</label>
+            <span class="field-counter" data-max="2200"><span class="field-count">0</span> / 2,200</span>
+          </div>
+          <textarea id="ig-post" class="field-input" data-max="2200" rows="3" placeholder="Post copy..."></textarea>
+          <div class="field-note">Truncates after ~125 characters.</div>
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="ig-story">Stories / Reels copy</label>
+            <span class="field-counter" data-max="125"><span class="field-count">0</span> / 125</span>
+          </div>
+          <textarea id="ig-story" class="field-input" data-max="125" rows="2" placeholder="Story or Reel copy..."></textarea>
+        </div>
+      </div>
+
+      <!-- LinkedIn Ads -->
+      <div class="structured-fields platform-panel hidden" id="platform-linkedin-ads">
+        <p class="platform-section-label">Single Image Ad</p>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-ad-headline">Headline</label>
+            <span class="field-counter" data-max="70"><span class="field-count">0</span> / 70</span>
+          </div>
+          <input type="text" id="li-ad-headline" class="field-input" data-max="70" placeholder="Ad headline...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-ad-intro">Intro text</label>
+            <span class="field-counter" data-max="150"><span class="field-count">0</span> / 150</span>
+          </div>
+          <textarea id="li-ad-intro" class="field-input" data-max="150" rows="2" placeholder="Intro text..."></textarea>
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-ad-desc">Description (LAN only)</label>
+            <span class="field-counter" data-max="70"><span class="field-count">0</span> / 70</span>
+          </div>
+          <input type="text" id="li-ad-desc" class="field-input" data-max="70" placeholder="Description...">
+        </div>
+        <p class="platform-section-label">Carousel Ad</p>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-carousel-headline">Card headline</label>
+            <span class="field-counter" data-max="45"><span class="field-count">0</span> / 45</span>
+          </div>
+          <input type="text" id="li-carousel-headline" class="field-input" data-max="45" placeholder="Card headline...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-carousel-intro">Intro text</label>
+            <span class="field-counter" data-max="255"><span class="field-count">0</span> / 255</span>
+          </div>
+          <textarea id="li-carousel-intro" class="field-input" data-max="255" rows="2" placeholder="Intro text..."></textarea>
+        </div>
+        <p class="platform-section-label">Lead Gen Form</p>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-lead-headline">Offer headline</label>
+            <span class="field-counter" data-max="60"><span class="field-count">0</span> / 60</span>
+          </div>
+          <input type="text" id="li-lead-headline" class="field-input" data-max="60" placeholder="Offer headline...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-lead-cta">CTA</label>
+            <span class="field-counter" data-max="20"><span class="field-count">0</span> / 20</span>
+          </div>
+          <input type="text" id="li-lead-cta" class="field-input" data-max="20" placeholder="CTA text...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="li-lead-confirm">Confirmation message</label>
+            <span class="field-counter" data-max="300"><span class="field-count">0</span> / 300</span>
+          </div>
+          <textarea id="li-lead-confirm" class="field-input" data-max="300" rows="2" placeholder="Confirmation message..."></textarea>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="structured-fields platform-panel hidden" id="platform-email">
+        <div class="field-group">
+          <div class="field-header">
+            <label for="email-subject">Subject line</label>
+            <span class="field-counter" data-max="75"><span class="field-count">0</span> / 75</span>
+          </div>
+          <input type="text" id="email-subject" class="field-input" data-max="75" placeholder="Subject line...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="email-preheader">Preheader</label>
+            <span class="field-counter" data-max="120"><span class="field-count">0</span> / 120</span>
+          </div>
+          <input type="text" id="email-preheader" class="field-input" data-max="120" placeholder="Preheader text...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="email-headline">Headline</label>
+            <span class="field-counter" data-max="50"><span class="field-count">0</span> / 50</span>
+          </div>
+          <input type="text" id="email-headline" class="field-input" data-max="50" placeholder="Headline...">
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="email-body">Body copy (primary offer)</label>
+            <span class="field-counter" data-max="500"><span class="field-count">0</span> / 500</span>
+          </div>
+          <textarea id="email-body" class="field-input" data-max="500" rows="4" placeholder="Body copy..."></textarea>
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="email-body-compact">Body copy (compact offer)</label>
+            <span class="field-counter" data-max="165"><span class="field-count">0</span> / 165</span>
+          </div>
+          <textarea id="email-body-compact" class="field-input" data-max="165" rows="2" placeholder="Compact body copy..."></textarea>
+        </div>
+        <div class="field-group">
+          <div class="field-header">
+            <label for="email-cta">CTA</label>
+            <span class="field-counter" data-max="20"><span class="field-count">0</span> / 20</span>
+          </div>
+          <input type="text" id="email-cta" class="field-input" data-max="20" placeholder="CTA text...">
+        </div>
+      </div>
+
+      <div class="editor-actions">
+        <button class="btn-primary check-structured-btn" data-mode="social">Check copy</button>
+        <button class="btn-secondary clear-structured-btn" data-mode="social">Clear</button>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results-section" class="results-section hidden">
+      <div class="results-header">
+        <h2 id="results-title">Results</h2>
+        <div class="legend">
+          <span class="legend-item"><span class="legend-swatch legend-editorial"></span> Editorial</span>
+          <span class="legend-item"><span class="legend-swatch legend-jargon"></span> Jargon</span>
+        </div>
+      </div>
+
+      <div id="output-area" class="output-area"></div>
+
+      <div id="issue-panel" class="issue-panel"></div>
+    </section>
+
+    <section id="empty-state" class="empty-state hidden">
+      <div class="empty-state-content">
+        <span class="empty-state-icon">&#10003;</span>
+        <p>No issues found — your copy looks good!</p>
+      </div>
+    </section>
+    <!-- Quick Reference -->
+    <details class="quick-ref">
+      <summary class="quick-ref-toggle">Quick reference</summary>
+      <div class="quick-ref-content">
+        <div class="quick-ref-grid">
+          <div class="quick-ref-card">
+            <h3>Headlines</h3>
+            <ul>
+              <li>Sentence case for all headlines</li>
+              <li>No period for single sentence or fragment</li>
+              <li>Period if two or more sentences</li>
+              <li>Subheads: sentence case with a period</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h3>Punctuation</h3>
+            <ul>
+              <li>Always use the Oxford/serial comma</li>
+              <li>Use em dash (—) with spaces, not --</li>
+              <li>Use "a.m." and "p.m." (lowercase, periods)</li>
+              <li>No ordinals in dates (April 15, not 15th)</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h3>Product names</h3>
+            <ul>
+              <li><strong>Capitalize:</strong> Workflow Builder, Slack Connect, Slack AI, Do Not Disturb</li>
+              <li><strong>Lowercase:</strong> huddles, channels, clips, canvases, lists, shortcuts</li>
+              <li>Never say "Slack Canvas" — use "canvases"</li>
+              <li>Einstein is retired — use "Trust Layer"</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h3>Spelling preferences</h3>
+            <ul>
+              <li>"okay" not OK or O.K.</li>
+              <li>"email" not e-mail</li>
+              <li>"e-book" not ebook</li>
+              <li>"canceled" not cancelled</li>
+              <li>"advisor" not adviser</li>
+              <li>"toward" not towards</li>
+              <li>"gray" not grey</li>
+              <li>"healthcare" (one word)</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h3>Common jargon to avoid</h3>
+            <ul>
+              <li>leverage &rarr; use</li>
+              <li>empower &rarr; help</li>
+              <li>utilize &rarr; use</li>
+              <li>streamline &rarr; simplify</li>
+              <li>enable &rarr; help, turn on</li>
+              <li>bandwidth &rarr; time, capacity</li>
+              <li>deep dive &rarr; analysis</li>
+              <li>ecosystem &rarr; environment</li>
+            </ul>
+          </div>
+          <div class="quick-ref-card">
+            <h3>Style hierarchy</h3>
+            <ul>
+              <li><strong>1.</strong> Salesforce style guide</li>
+              <li><strong>2.</strong> AP Style</li>
+              <li><strong>3.</strong> Merriam-Webster</li>
+            </ul>
+            <p class="quick-ref-note">Salesforce overrides AP; AP fills gaps; M-W is the default for spelling.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <p>Review your voice and tone with a human at <a href="https://salesforce.enterprise.slack.com/archives/C08QB2WVB6Y" target="_blank">#slack-brand-internal</a> | <span class="whats-this">Sources 🧠<span class="whats-this-tooltip">Slack and Salesforce Editorial Usage Guides, Salesforce Social Media Guidelines, Salesforce Jargon Glossary (Last updated April 2026)</span></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "jargon-accelerate",
+    "type": "jargon",
+    "pattern": "\\baccelerati(ng|on|ons|e|es|ed)\\b",
+    "flags": "gi",
+    "message": "Avoid \"accelerate\" — it's corporate jargon.",
+    "suggestion": "speed up"
+  },
+  {
+    "id": "jargon-actionable",
+    "type": "jargon",
+    "pattern": "\\bactionable\\b",
+    "flags": "gi",
+    "message": "Avoid \"actionable\" — it's corporate jargon.",
+    "suggestion": "functional, viable"
+  },
+  {
+    "id": "jargon-activate",
+    "type": "jargon",
+    "pattern": "\\bactivat(e|es|ed|ing|ion|ions)\\b",
+    "flags": "gi",
+    "message": "Avoid \"activate\" — it's corporate jargon.",
+    "suggestion": "motivate, prompt"
+  },
+  {
+    "id": "jargon-alignment",
+    "type": "jargon",
+    "pattern": "\\balignment\\b",
+    "flags": "gi",
+    "message": "Avoid \"alignment\" — it's corporate jargon.",
+    "suggestion": "agree with, agreement"
+  },
+  {
+    "id": "jargon-at-the-end-of-the-day",
+    "type": "jargon",
+    "pattern": "\\bat the end of the day\\b",
+    "flags": "gi",
+    "message": "Avoid \"at the end of the day\" — it's a cliché.",
+    "suggestion": "finally, ultimately"
+  },
+  {
+    "id": "jargon-bandwidth",
+    "type": "jargon",
+    "pattern": "\\bbandwidth\\b",
+    "flags": "gi",
+    "message": "Avoid \"bandwidth\" when referring to personal capacity.",
+    "suggestion": "time, availability, capacity"
+  },
+  {
+    "id": "jargon-baseline",
+    "type": "jargon",
+    "pattern": "\\bbaseline\\b",
+    "flags": "gi",
+    "message": "Avoid \"baseline\" — it's corporate jargon.",
+    "suggestion": "basic standard, level"
+  },
+  {
+    "id": "jargon-bespoke",
+    "type": "jargon",
+    "pattern": "\\bbespoke\\b",
+    "flags": "gi",
+    "message": "Avoid \"bespoke\" — it's corporate jargon.",
+    "suggestion": "custom, custom fit"
+  },
+  {
+    "id": "jargon-best-in-class",
+    "type": "jargon",
+    "pattern": "\\bbest[- ]in[- ]class\\b",
+    "flags": "gi",
+    "message": "Avoid \"best-in-class\" — it's corporate jargon.",
+    "suggestion": "best"
+  },
+  {
+    "id": "jargon-blue-sky",
+    "type": "jargon",
+    "pattern": "\\bblue[- ]sky\\b",
+    "flags": "gi",
+    "message": "Avoid \"blue sky\" / \"blue-sky thinking\" — it's corporate jargon.",
+    "suggestion": "limitless possibility, brainstorming"
+  },
+  {
+    "id": "jargon-business-value",
+    "type": "jargon",
+    "pattern": "\\bbusiness value\\b",
+    "flags": "gi",
+    "message": "Avoid \"business value\" — it's corporate jargon.",
+    "suggestion": "value, benefit"
+  },
+  {
+    "id": "jargon-buzzworthy",
+    "type": "jargon",
+    "pattern": "\\bbuzzworthy\\b",
+    "flags": "gi",
+    "message": "Avoid \"buzzworthy\" — it's corporate jargon.",
+    "suggestion": "exciting"
+  },
+  {
+    "id": "jargon-cob",
+    "type": "jargon",
+    "pattern": "\\bCOB\\b",
+    "flags": "g",
+    "message": "Avoid \"COB\" — it's corporate jargon.",
+    "suggestion": "5:00 p.m."
+  },
+  {
+    "id": "jargon-deep-dive",
+    "type": "jargon",
+    "pattern": "\\bdeep[- ]div(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"deep dive\" — it's corporate jargon.",
+    "suggestion": "analysis, detailed description"
+  },
+  {
+    "id": "jargon-disrupt",
+    "type": "jargon",
+    "pattern": "\\bdisrupt(s|ed|ing|ion|ive|or)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"disrupt\" in the jargon sense — it sounds dated.",
+    "suggestion": "try something different, innovate, change"
+  },
+  {
+    "id": "jargon-drive",
+    "type": "jargon",
+    "pattern": "\\bdriv(e|es|ing) (?:innovation|growth|results|value|change|engagement|revenue|success|transformation|outcomes|impact)\\b",
+    "flags": "gi",
+    "message": "Avoid \"drive\" as corporate jargon when paired with abstract concepts.",
+    "suggestion": "influence, reinforce, increase, encourage, promote"
+  },
+  {
+    "id": "jargon-ecosystem",
+    "type": "jargon",
+    "pattern": "\\becosystem\\b",
+    "flags": "gi",
+    "message": "Avoid \"ecosystem\" — it's corporate jargon.",
+    "suggestion": "environment"
+  },
+  {
+    "id": "jargon-elevate-productivity",
+    "type": "jargon",
+    "pattern": "\\beleva(te|tes|ted|ting) productivity\\b",
+    "flags": "gi",
+    "message": "Avoid \"elevate productivity\" — it's corporate jargon.",
+    "suggestion": "raise productivity, make your teams more productive"
+  },
+  {
+    "id": "jargon-empower",
+    "type": "jargon",
+    "pattern": "\\bempower(s|ed|ing|ment)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"empower\" — it's corporate jargon.",
+    "suggestion": "help, entrust"
+  },
+  {
+    "id": "jargon-enable",
+    "type": "jargon",
+    "pattern": "\\benabl(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"enable\" — it's corporate jargon.",
+    "suggestion": "help, turn on"
+  },
+  {
+    "id": "jargon-enablement",
+    "type": "jargon",
+    "pattern": "\\benablement\\b",
+    "flags": "gi",
+    "message": "Avoid \"enablement\" — it's not a real word.",
+    "suggestion": "help, facilitation, provide assistance"
+  },
+  {
+    "id": "jargon-endeavor",
+    "type": "jargon",
+    "pattern": "\\bendeavor(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"endeavor\" — it's corporate jargon.",
+    "suggestion": "goal"
+  },
+  {
+    "id": "jargon-eod",
+    "type": "jargon",
+    "pattern": "\\bEOD\\b",
+    "flags": "g",
+    "message": "Avoid \"EOD\" — it's corporate jargon.",
+    "suggestion": "this evening, by 5:00 p.m."
+  },
+  {
+    "id": "jargon-functionality",
+    "type": "jargon",
+    "pattern": "\\bfunctionality\\b",
+    "flags": "gi",
+    "message": "Avoid \"functionality\" — it's corporate jargon.",
+    "suggestion": "use, what it can do"
+  },
+  {
+    "id": "jargon-game-changer",
+    "type": "jargon",
+    "pattern": "\\bgame[- ]changer(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"game changer\" — it's corporate jargon.",
+    "suggestion": "catalyst, turning point, difference"
+  },
+  {
+    "id": "jargon-granular",
+    "type": "jargon",
+    "pattern": "\\bgranular(ity)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"granular\" — it's corporate jargon.",
+    "suggestion": "detailed, specific"
+  },
+  {
+    "id": "jargon-harness",
+    "type": "jargon",
+    "pattern": "\\bharness(es|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"harness\" — it's corporate jargon.",
+    "suggestion": "use"
+  },
+  {
+    "id": "jargon-hyperscale",
+    "type": "jargon",
+    "pattern": "\\bhyperscal(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"hyperscale\" — it's corporate jargon.",
+    "suggestion": "grow quickly"
+  },
+  {
+    "id": "jargon-incentivize",
+    "type": "jargon",
+    "pattern": "\\bincentiviz(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"incentivize\" — it's corporate jargon.",
+    "suggestion": "encourage, provide incentive"
+  },
+  {
+    "id": "jargon-impact-verb",
+    "type": "jargon",
+    "pattern": "\\bimpact(s|ed|ing) \\b",
+    "flags": "gi",
+    "message": "Avoid \"impact\" as a verb — use \"affect\" instead.",
+    "suggestion": "affect"
+  },
+  {
+    "id": "jargon-impactful",
+    "type": "jargon",
+    "pattern": "\\bimpactful\\b",
+    "flags": "gi",
+    "message": "Avoid \"impactful\" — it's corporate jargon.",
+    "suggestion": "effective"
+  },
+  {
+    "id": "jargon-innovate",
+    "type": "jargon",
+    "pattern": "\\binnovat(e|es|ed|ing|ion|ions|ive)\\b",
+    "flags": "gi",
+    "message": "Consider whether \"innovate\" is the best word here.",
+    "suggestion": "introduce, invent, pioneer"
+  },
+  {
+    "id": "jargon-level-set",
+    "type": "jargon",
+    "pattern": "\\blevel[- ]set(s|ting)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"level set\" — it's corporate jargon.",
+    "suggestion": "agree"
+  },
+  {
+    "id": "jargon-leverage",
+    "type": "jargon",
+    "pattern": "\\bleverag(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"leverage\" as a verb — it's corporate jargon.",
+    "suggestion": "use, using"
+  },
+  {
+    "id": "jargon-low-hanging-fruit",
+    "type": "jargon",
+    "pattern": "\\blow[- ]hanging fruit\\b",
+    "flags": "gi",
+    "message": "Avoid \"low-hanging fruit\" — it's corporate jargon.",
+    "suggestion": "best opportunity, easiest tasks"
+  },
+  {
+    "id": "jargon-maximize",
+    "type": "jargon",
+    "pattern": "\\bmaximiz(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"maximize\" — it's corporate jargon.",
+    "suggestion": "make the most of"
+  },
+  {
+    "id": "jargon-mindshare",
+    "type": "jargon",
+    "pattern": "\\bmindshare\\b",
+    "flags": "gi",
+    "message": "Avoid \"mindshare\" — it's corporate jargon.",
+    "suggestion": "awareness, attention"
+  },
+  {
+    "id": "jargon-move-the-needle",
+    "type": "jargon",
+    "pattern": "\\bmove the needle\\b",
+    "flags": "gi",
+    "message": "Avoid \"move the needle\" — it's corporate jargon.",
+    "suggestion": "affect, make a difference, make progress"
+  },
+  {
+    "id": "jargon-the-ask",
+    "type": "jargon",
+    "pattern": "\\bthe ask\\b",
+    "flags": "gi",
+    "message": "Avoid \"the ask\" — it's corporate jargon.",
+    "suggestion": "request, the question"
+  },
+  {
+    "id": "jargon-net-new",
+    "type": "jargon",
+    "pattern": "\\bnet[- ]new\\b",
+    "flags": "gi",
+    "message": "Avoid \"net new\" — it's corporate jargon.",
+    "suggestion": "new"
+  },
+  {
+    "id": "jargon-next-generation",
+    "type": "jargon",
+    "pattern": "\\bnext[- ]gen(eration)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"next generation\" — it's corporate jargon.",
+    "suggestion": "new, updated, improved"
+  },
+  {
+    "id": "jargon-on-the-same-page",
+    "type": "jargon",
+    "pattern": "\\bon the same page\\b",
+    "flags": "gi",
+    "message": "Avoid \"on the same page\" — it's a cliché.",
+    "suggestion": "agree, understand, align"
+  },
+  {
+    "id": "jargon-one-stop-shop",
+    "type": "jargon",
+    "pattern": "\\bone[- ]stop[- ]shop\\b",
+    "flags": "gi",
+    "message": "Avoid \"one-stop shop\" — it's corporate jargon.",
+    "suggestion": "hub, headquarters"
+  },
+  {
+    "id": "jargon-organic",
+    "type": "jargon",
+    "pattern": "\\borganically?\\b",
+    "flags": "gi",
+    "message": "Consider whether \"organic\" is the best word here.",
+    "suggestion": "spontaneous, natural"
+  },
+  {
+    "id": "jargon-out-of-the-box",
+    "type": "jargon",
+    "pattern": "\\bout[- ]of[- ]the[- ]box\\b",
+    "flags": "gi",
+    "message": "Avoid \"out-of-the-box\" — it's corporate jargon.",
+    "suggestion": "easy to use, creative"
+  },
+  {
+    "id": "jargon-paradigm",
+    "type": "jargon",
+    "pattern": "\\bparadigm(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"paradigm\" — it's corporate jargon.",
+    "suggestion": "model"
+  },
+  {
+    "id": "jargon-path-forward",
+    "type": "jargon",
+    "pattern": "\\bpath forward\\b",
+    "flags": "gi",
+    "message": "Avoid \"path forward\" — it's corporate jargon.",
+    "suggestion": "direction, plan"
+  },
+  {
+    "id": "jargon-peer-to-peer",
+    "type": "jargon",
+    "pattern": "\\bpeer[- ]to[- ]peer\\b",
+    "flags": "gi",
+    "message": "Avoid \"peer-to-peer\" — it's corporate jargon.",
+    "suggestion": "conversation"
+  },
+  {
+    "id": "jargon-real-time",
+    "type": "jargon",
+    "pattern": "\\breal[- ]time\\b",
+    "flags": "gi",
+    "message": "Consider whether \"real-time\" is the best word here.",
+    "suggestion": "up-to-the-minute, instant"
+  },
+  {
+    "id": "jargon-revolutionary",
+    "type": "jargon",
+    "pattern": "\\brevolutionary\\b",
+    "flags": "gi",
+    "message": "Avoid \"revolutionary\" — it's corporate jargon.",
+    "suggestion": "exceptional, advanced, uncommon"
+  },
+  {
+    "id": "jargon-scalable",
+    "type": "jargon",
+    "pattern": "\\bscalabl(e|ility)\\b",
+    "flags": "gi",
+    "message": "Avoid \"scalable\" — it's corporate jargon.",
+    "suggestion": "growable, sustainable growth"
+  },
+  {
+    "id": "jargon-secret-sauce",
+    "type": "jargon",
+    "pattern": "\\bsecret sauce\\b",
+    "flags": "gi",
+    "message": "Avoid \"secret sauce\" — it's corporate jargon.",
+    "suggestion": "differentiating features, unique capabilities"
+  },
+  {
+    "id": "jargon-silos",
+    "type": "jargon",
+    "pattern": "\\bsilo(s|ed)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"silos\" — it's corporate jargon.",
+    "suggestion": "departments, teams, groups"
+  },
+  {
+    "id": "jargon-socialize",
+    "type": "jargon",
+    "pattern": "\\bsocializ(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"socialize\" when meaning to share — it's corporate jargon.",
+    "suggestion": "share"
+  },
+  {
+    "id": "jargon-speed-to-value",
+    "type": "jargon",
+    "pattern": "\\bspeed to value\\b",
+    "flags": "gi",
+    "message": "Avoid \"speed to value\" — it's corporate jargon.",
+    "suggestion": "fast development"
+  },
+  {
+    "id": "jargon-streamline",
+    "type": "jargon",
+    "pattern": "\\bstreamlin(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"streamline\" — it's corporate jargon.",
+    "suggestion": "reduce unnecessary steps, simplify"
+  },
+  {
+    "id": "jargon-supercharge",
+    "type": "jargon",
+    "pattern": "\\bsupercharg(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Avoid \"supercharge\" — it's corporate jargon.",
+    "suggestion": "improve"
+  },
+  {
+    "id": "jargon-synergy",
+    "type": "jargon",
+    "pattern": "\\bsynerg(y|ies|istic|istically)\\b",
+    "flags": "gi",
+    "message": "Avoid \"synergy\" — it's corporate jargon.",
+    "suggestion": "common understanding, mutual benefit, teamwork"
+  },
+  {
+    "id": "jargon-trailblaze",
+    "type": "jargon",
+    "pattern": "\\btrailblaz(e|es|ed|ing|er|ers)\\b",
+    "flags": "gi",
+    "message": "The Salesforce style guide does not allow use of \"trailblaze\" — avoid it.",
+    "suggestion": "innovate, invent, pioneer"
+  },
+  {
+    "id": "jargon-unleash",
+    "type": "jargon",
+    "pattern": "\\bunleash(es|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"unleash\" — it's corporate jargon.",
+    "suggestion": "take advantage of"
+  },
+  {
+    "id": "jargon-unlock",
+    "type": "jargon",
+    "pattern": "\\bunlock(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"unlock\" — it's corporate jargon.",
+    "suggestion": "take advantage of"
+  },
+  {
+    "id": "jargon-uplevel",
+    "type": "jargon",
+    "pattern": "\\buplevel(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"uplevel\" — it's corporate jargon.",
+    "suggestion": "raise, increase"
+  },
+  {
+    "id": "jargon-utilize",
+    "type": "jargon",
+    "pattern": "\\butiliz(e|es|ed|ing|ation)\\b",
+    "flags": "gi",
+    "message": "Avoid \"utilize\" — prefer \"use.\"",
+    "suggestion": "use, employ"
+  },
+  {
+    "id": "jargon-value-add",
+    "type": "jargon",
+    "pattern": "\\bvalue[- ]add(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"value add\" — it's corporate jargon.",
+    "suggestion": "improve, enhance"
+  },
+  {
+    "id": "jargon-value-proposition",
+    "type": "jargon",
+    "pattern": "\\bvalue proposition(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"value proposition\" — it's corporate jargon.",
+    "suggestion": "benefit"
+  },
+  {
+    "id": "jargon-value-stream",
+    "type": "jargon",
+    "pattern": "\\bvalue stream(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"value stream\" — it's corporate jargon.",
+    "suggestion": "steps to add value"
+  },
+  {
+    "id": "jargon-visioning",
+    "type": "jargon",
+    "pattern": "\\bvisioning\\b",
+    "flags": "gi",
+    "message": "Avoid \"visioning\" — it's corporate jargon.",
+    "suggestion": "imagining, planning"
+  },
+  {
+    "id": "jargon-viral",
+    "type": "jargon",
+    "pattern": "\\bviral\\b",
+    "flags": "gi",
+    "message": "Consider whether \"viral\" is the best word here.",
+    "suggestion": "popular"
+  },
+  {
+    "id": "jargon-wheelhouse",
+    "type": "jargon",
+    "pattern": "\\bwheelhouse\\b",
+    "flags": "gi",
+    "message": "Avoid \"wheelhouse\" — it's corporate jargon.",
+    "suggestion": "area of expertise, specialty"
+  },
+  {
+    "id": "jargon-world-class",
+    "type": "jargon",
+    "pattern": "\\bworld[- ]class\\b",
+    "flags": "gi",
+    "message": "Avoid \"world class\" — it's corporate jargon.",
+    "suggestion": "best, outstanding"
+  },
+  {
+    "id": "jargon-cutting-edge",
+    "type": "jargon",
+    "pattern": "\\bcutting[- ]edge\\b",
+    "flags": "gi",
+    "message": "Avoid \"cutting edge\" — it's a cliché.",
+    "suggestion": "advanced, leading"
+  },
+  {
+    "id": "jargon-robust",
+    "type": "jargon",
+    "pattern": "\\brobust\\b",
+    "flags": "gi",
+    "message": "Avoid \"robust\" — it's a cliché in tech marketing.",
+    "suggestion": "strong, thorough, comprehensive"
+  },
+  {
+    "id": "jargon-state-of-the-art",
+    "type": "jargon",
+    "pattern": "\\bstate[- ]of[- ]the[- ]art\\b",
+    "flags": "gi",
+    "message": "Avoid \"state-of-the-art\" — it's a cliché.",
+    "suggestion": "modern, advanced, latest"
+  },
+  {
+    "id": "jargon-user-friendly",
+    "type": "jargon",
+    "pattern": "\\buser[- ]friendly\\b",
+    "flags": "gi",
+    "message": "Avoid \"user-friendly\" — it's a cliché.",
+    "suggestion": "easy to use, intuitive"
+  },
+  {
+    "id": "jargon-total-solution",
+    "type": "jargon",
+    "pattern": "\\btotal solution\\b",
+    "flags": "gi",
+    "message": "Avoid \"total solution\" — it's a cliché.",
+    "suggestion": "complete, comprehensive"
+  },
+  {
+    "id": "jargon-powerful-feature",
+    "type": "jargon",
+    "pattern": "\\bpowerful feature(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"powerful feature\" — it's a cliché.",
+    "suggestion": "Be specific about what the feature does"
+  },
+  {
+    "id": "jargon-end-of-life",
+    "type": "jargon",
+    "pattern": "\\bend[- ]of[- ]life\\b",
+    "flags": "gi",
+    "message": "Avoid \"end-of-life\" — use \"feature retirement\" or \"retire.\"",
+    "suggestion": "feature retirement, retire"
+  },
+  {
+    "id": "jargon-outage",
+    "type": "jargon",
+    "pattern": "\\boutage(s)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"outage\" — use \"service disruption.\"",
+    "suggestion": "service disruption"
+  },
+  {
+    "id": "editorial-alot",
+    "type": "editorial",
+    "pattern": "\\balot\\b",
+    "flags": "gi",
+    "message": "\"Alot\" is not a word — \"a lot\" is always two words.",
+    "suggestion": "a lot"
+  },
+  {
+    "id": "editorial-alright",
+    "type": "editorial",
+    "pattern": "\\balright\\b",
+    "flags": "gi",
+    "message": "Use \"all right\" — \"alright\" is incorrect per Salesforce style.",
+    "suggestion": "all right"
+  },
+  {
+    "id": "editorial-backwards",
+    "type": "editorial",
+    "pattern": "\\b(backwards|forwards|towards|upwards|afterwards)\\b",
+    "flags": "gi",
+    "message": "Drop the trailing \"s\" — use the American form.",
+    "suggestion": "backward, forward, toward, upward, afterward"
+  },
+  {
+    "id": "editorial-cancelled",
+    "type": "editorial",
+    "pattern": "\\b(cancelled|cancelling)\\b",
+    "flags": "gi",
+    "message": "Use the preferred spelling: \"canceled\" or \"canceling\" (one L).",
+    "suggestion": "canceled, canceling"
+  },
+  {
+    "id": "editorial-cancelation",
+    "type": "editorial",
+    "pattern": "\\bcancelation\\b",
+    "flags": "gi",
+    "message": "Use the preferred spelling: \"cancellation\" (two L's).",
+    "suggestion": "cancellation"
+  },
+  {
+    "id": "editorial-and-or",
+    "type": "editorial",
+    "pattern": "\\band/or\\b",
+    "flags": "gi",
+    "message": "Don't use \"and/or.\" Rewrite to clarify — usually \"or\" (which can mean either or both) works.",
+    "suggestion": "or"
+  },
+  {
+    "id": "editorial-ie-running",
+    "type": "editorial",
+    "pattern": "(?<![\\w.])i\\.e\\.(?![\\w])",
+    "flags": "g",
+    "message": "Avoid \"i.e.\" in running text — use \"that is\" instead.",
+    "suggestion": "that is"
+  },
+  {
+    "id": "editorial-eg-running",
+    "type": "editorial",
+    "pattern": "(?<![\\w.])e\\.g\\.(?![\\w])",
+    "flags": "g",
+    "message": "Avoid \"e.g.\" in running text — use \"for example\" instead.",
+    "suggestion": "for example"
+  },
+  {
+    "id": "editorial-etc-running",
+    "type": "editorial",
+    "pattern": "(?<![\\w.])etc\\.(?![\\w])",
+    "flags": "g",
+    "message": "Avoid \"etc.\" in running text — use \"and so on\" instead.",
+    "suggestion": "and so on"
+  },
+  {
+    "id": "editorial-adviser",
+    "type": "editorial",
+    "pattern": "\\badviser\\b",
+    "flags": "gi",
+    "message": "Use \"advisor\" (with -or), not \"adviser.\"",
+    "suggestion": "advisor"
+  },
+  {
+    "id": "editorial-am-pm-caps",
+    "type": "editorial",
+    "pattern": "\\d\\s*(AM|PM|A\\.M\\.|P\\.M\\.|am|pm)\\b",
+    "flags": "g",
+    "message": "Use lowercase with periods: \"a.m.\" and \"p.m.\" — not AM, PM, am, or pm.",
+    "suggestion": "a.m. / p.m."
+  },
+  {
+    "id": "editorial-ok-spelling",
+    "type": "editorial",
+    "pattern": "\\b(OK|O\\.K\\.)\\b",
+    "flags": "g",
+    "message": "Use \"okay\" — not \"OK\" or \"O.K.\"",
+    "suggestion": "okay"
+  },
+  {
+    "id": "editorial-email-hyphen",
+    "type": "editorial",
+    "pattern": "\\be-mail(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"email\" — no hyphen.",
+    "suggestion": "email"
+  },
+  {
+    "id": "editorial-ecommerce-hyphen",
+    "type": "editorial",
+    "pattern": "\\be-commerce\\b",
+    "flags": "gi",
+    "message": "Use \"ecommerce\" — no hyphen.",
+    "suggestion": "ecommerce"
+  },
+  {
+    "id": "editorial-login-verb",
+    "type": "editorial",
+    "pattern": "\\blogin to\\b",
+    "flags": "gi",
+    "message": "As a verb, it's two words: \"log in to\" (not \"login to\").",
+    "suggestion": "log in to"
+  },
+  {
+    "id": "editorial-setup-verb",
+    "type": "editorial",
+    "pattern": "\\bsetup (?:the|a|your|an|this)\\b",
+    "flags": "gi",
+    "message": "As a verb, it's two words: \"set up.\" \"Setup\" is only a noun or adjective.",
+    "suggestion": "set up"
+  },
+  {
+    "id": "editorial-backup-verb",
+    "type": "editorial",
+    "pattern": "\\bbackup (?:the|a|your|an|this)\\b",
+    "flags": "gi",
+    "message": "As a verb, it's two words: \"back up.\" \"Backup\" is only a noun or adjective.",
+    "suggestion": "back up"
+  },
+  {
+    "id": "editorial-daylight-savings",
+    "type": "editorial",
+    "pattern": "\\bdaylight savings? time\\b",
+    "flags": "gi",
+    "message": "It's \"daylight saving time\" — no S on \"saving.\"",
+    "suggestion": "daylight saving time"
+  },
+  {
+    "id": "editorial-gender-neutral",
+    "type": "editorial",
+    "pattern": "\\bgender[- ]neutral\\b",
+    "flags": "gi",
+    "message": "Do not use \"gender neutral\" — use \"all-gender\" (adj.) or \"for all genders\" / \"for everyone.\"",
+    "suggestion": "all-gender"
+  },
+  {
+    "id": "editorial-amongst",
+    "type": "editorial",
+    "pattern": "\\bamongst\\b",
+    "flags": "gi",
+    "message": "Use \"among\" — not \"amongst.\"",
+    "suggestion": "among"
+  },
+  {
+    "id": "editorial-amidst",
+    "type": "editorial",
+    "pattern": "\\bamidst\\b",
+    "flags": "gi",
+    "message": "Use \"amid\" — not \"amidst.\"",
+    "suggestion": "amid"
+  },
+  {
+    "id": "editorial-anyways",
+    "type": "editorial",
+    "pattern": "\\banyways\\b",
+    "flags": "gi",
+    "message": "Use \"anyway\" — not \"anyways.\"",
+    "suggestion": "anyway"
+  },
+  {
+    "id": "editorial-learnings",
+    "type": "editorial",
+    "pattern": "\\blearnings\\b",
+    "flags": "gi",
+    "message": "Prefer \"lessons\" or \"findings\" over \"learnings.\"",
+    "suggestion": "lessons, findings"
+  },
+  {
+    "id": "editorial-prior-to",
+    "type": "editorial",
+    "pattern": "\\bprior to\\b",
+    "flags": "gi",
+    "message": "\"Prior to\" can usually be replaced by \"before.\"",
+    "suggestion": "before"
+  },
+  {
+    "id": "editorial-grey",
+    "type": "editorial",
+    "pattern": "\\bgrey\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"gray\" — not \"grey.\"",
+    "suggestion": "gray"
+  },
+  {
+    "id": "editorial-centre",
+    "type": "editorial",
+    "pattern": "\\bcentre\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"center\" — not \"centre.\"",
+    "suggestion": "center"
+  },
+  {
+    "id": "editorial-donut",
+    "type": "editorial",
+    "pattern": "\\bdonut(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"doughnut\" — not \"donut\" (except the Donut app).",
+    "suggestion": "doughnut"
+  },
+  {
+    "id": "editorial-woah",
+    "type": "editorial",
+    "pattern": "\\bwoah\\b",
+    "flags": "gi",
+    "message": "Use \"whoa\" — not \"woah.\"",
+    "suggestion": "whoa"
+  },
+  {
+    "id": "editorial-nevermind",
+    "type": "editorial",
+    "pattern": "\\bnevermind\\b",
+    "flags": "gi",
+    "message": "It's two words: \"never mind.\"",
+    "suggestion": "never mind"
+  },
+  {
+    "id": "editorial-skillset",
+    "type": "editorial",
+    "pattern": "\\bskillset\\b",
+    "flags": "gi",
+    "message": "It's two words: \"skill set.\"",
+    "suggestion": "skill set"
+  },
+  {
+    "id": "editorial-eBook",
+    "type": "editorial",
+    "pattern": "\\b(ebook|eBook|Ebook)\\b",
+    "flags": "g",
+    "message": "Use \"e-book\" — hyphenated, lowercase B.",
+    "suggestion": "e-book"
+  },
+  {
+    "id": "editorial-click-thru",
+    "type": "editorial",
+    "pattern": "\\bclick[- ]thru(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"click-throughs\" — not \"click-thrus.\"",
+    "suggestion": "click-throughs"
+  },
+  {
+    "id": "editorial-ordinal-dates",
+    "type": "editorial",
+    "pattern": "\\b(?:January|February|March|April|May|June|July|August|September|October|November|December) \\d{1,2}(?:st|nd|rd|th)\\b",
+    "flags": "g",
+    "message": "Don't use ordinals in dates — write \"April 15\" not \"April 15th.\"",
+    "suggestion": "Remove the st/nd/rd/th"
+  },
+  {
+    "id": "editorial-double-hyphen",
+    "type": "editorial",
+    "pattern": "--",
+    "flags": "g",
+    "message": "Use an em dash (—) instead of a double hyphen (--).",
+    "suggestion": "—"
+  },
+  {
+    "id": "editorial-excited-to-announce",
+    "type": "editorial",
+    "pattern": "\\b(we are|we're) excited to announce\\b",
+    "flags": "gi",
+    "message": "Avoid \"We are excited to announce\" — focus on the customer, not us.",
+    "suggestion": "Rewrite to focus on the benefit to the reader"
+  },
+  {
+    "id": "editorial-slack-canvas",
+    "type": "editorial",
+    "pattern": "\\bSlack [Cc]anvas(es)?\\b",
+    "flags": "g",
+    "message": "Never say \"Slack Canvas\" or \"Slack Canvases.\" Use \"Slack canvases\" if you must reference the brand, or just \"canvases.\"",
+    "suggestion": "Slack canvases, or just canvases"
+  },
+  {
+    "id": "editorial-einstein",
+    "type": "editorial",
+    "pattern": "\\bEinstein Trust Layer\\b",
+    "flags": "g",
+    "message": "Einstein is retired — use \"Trust Layer\" instead of \"Einstein Trust Layer.\"",
+    "suggestion": "Trust Layer"
+  },
+  {
+    "id": "editorial-slack-as-verb",
+    "type": "editorial",
+    "pattern": "\\b[Ss]lacked\\b|\\b[Ss]lacking\\b",
+    "flags": "g",
+    "message": "Do not use \"Slack\" as a verb (e.g., \"I Slacked you\").",
+    "suggestion": "sent a message in Slack"
+  },
+  {
+    "id": "editorial-chatbot-slack",
+    "type": "editorial",
+    "pattern": "\\bchatbot(s)?\\b",
+    "flags": "gi",
+    "message": "Never use \"chatbot\" in relation to Slack or to describe the category Slack is in.",
+    "suggestion": "Consider whether this term is appropriate in context"
+  },
+  {
+    "id": "editorial-product-stack",
+    "type": "editorial",
+    "pattern": "\\bAgentforce (Sales Cloud|Service Cloud|Data Cloud|Marketing Cloud)\\b",
+    "flags": "g",
+    "message": "Don't stack product names — e.g., don't write \"Agentforce Sales Cloud.\"",
+    "suggestion": "Use the product names separately"
+  },
+  {
+    "id": "editorial-agentic-caps",
+    "type": "editorial",
+    "pattern": "\\bAgentic(?! Enterprise)\\b",
+    "flags": "g",
+    "message": "\"Agentic\" should be lowercase unless part of \"Agentic Enterprise\" (the branded term).",
+    "suggestion": "agentic"
+  },
+  {
+    "id": "editorial-he-she",
+    "type": "editorial",
+    "pattern": "\\bhe/she\\b|\\bs/he\\b",
+    "flags": "gi",
+    "message": "Don't use \"he/she\" — rewrite the sentence to avoid it.",
+    "suggestion": "Rewrite using \"they\" or restructure the sentence"
+  },
+  {
+    "id": "editorial-over-quantity",
+    "type": "editorial",
+    "pattern": "\\bover \\d",
+    "flags": "g",
+    "message": "When referring to quantity, use \"more than\" instead of \"over.\"",
+    "suggestion": "more than"
+  },
+  {
+    "id": "editorial-upon",
+    "type": "editorial",
+    "pattern": "\\bupon\\b",
+    "flags": "gi",
+    "message": "Use \"on\" instead of \"upon\" in most instances.",
+    "suggestion": "on"
+  },
+  {
+    "id": "editorial-salesforce-channels",
+    "type": "editorial",
+    "pattern": "\\bSalesforce Channels\\b",
+    "flags": "g",
+    "message": "Lowercase the C — it's \"Salesforce channels\" not \"Salesforce Channels.\"",
+    "suggestion": "Salesforce channels"
+  },
+  {
+    "id": "editorial-healthcare",
+    "type": "editorial",
+    "pattern": "\\bhealth care\\b",
+    "flags": "gi",
+    "message": "Use \"healthcare\" — one word in all uses.",
+    "suggestion": "healthcare"
+  },
+  {
+    "id": "editorial-homepage",
+    "type": "editorial",
+    "pattern": "\\bhome page\\b",
+    "flags": "gi",
+    "message": "Use \"homepage\" — one word.",
+    "suggestion": "homepage"
+  },
+  {
+    "id": "editorial-webpage-two-words",
+    "type": "editorial",
+    "pattern": "\\bweb page\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, use \"webpage\" — one word, lowercase.",
+    "suggestion": "webpage"
+  },
+  {
+    "id": "editorial-web-site",
+    "type": "editorial",
+    "pattern": "\\bweb site\\b",
+    "flags": "gi",
+    "message": "Use \"website\" — one word, lowercase.",
+    "suggestion": "website"
+  },
+  {
+    "id": "editorial-dataset",
+    "type": "editorial",
+    "pattern": "\\bdata set\\b",
+    "flags": "gi",
+    "message": "Use \"dataset\" — one word.",
+    "suggestion": "dataset"
+  },
+  {
+    "id": "editorial-datasheet",
+    "type": "editorial",
+    "pattern": "\\bdata sheet\\b",
+    "flags": "gi",
+    "message": "Use \"datasheet\" — one word.",
+    "suggestion": "datasheet"
+  },
+  {
+    "id": "editorial-lifecycle",
+    "type": "editorial",
+    "pattern": "\\blife cycle\\b",
+    "flags": "gi",
+    "message": "Use \"lifecycle\" — one word in sales and software contexts.",
+    "suggestion": "lifecycle"
+  },
+  {
+    "id": "editorial-roadmap",
+    "type": "editorial",
+    "pattern": "\\broad map\\b",
+    "flags": "gi",
+    "message": "Use \"roadmap\" — one word.",
+    "suggestion": "roadmap"
+  },
+  {
+    "id": "editorial-mindset",
+    "type": "editorial",
+    "pattern": "\\bmind set\\b",
+    "flags": "gi",
+    "message": "Use \"mindset\" — one word.",
+    "suggestion": "mindset"
+  },
+  {
+    "id": "editorial-headcount",
+    "type": "editorial",
+    "pattern": "\\bhead count\\b",
+    "flags": "gi",
+    "message": "Use \"headcount\" — one word.",
+    "suggestion": "headcount"
+  },
+  {
+    "id": "editorial-livestream",
+    "type": "editorial",
+    "pattern": "\\blive stream\\b",
+    "flags": "gi",
+    "message": "Use \"livestream\" — one word.",
+    "suggestion": "livestream"
+  },
+  {
+    "id": "editorial-touchscreen",
+    "type": "editorial",
+    "pattern": "\\btouch screen\\b",
+    "flags": "gi",
+    "message": "Use \"touchscreen\" — one word.",
+    "suggestion": "touchscreen"
+  },
+  {
+    "id": "editorial-touchpoint",
+    "type": "editorial",
+    "pattern": "\\btouch point\\b",
+    "flags": "gi",
+    "message": "Use \"touchpoint\" — one word.",
+    "suggestion": "touchpoint"
+  },
+  {
+    "id": "editorial-username",
+    "type": "editorial",
+    "pattern": "\\buser name\\b",
+    "flags": "gi",
+    "message": "Use \"username\" — one word.",
+    "suggestion": "username"
+  },
+  {
+    "id": "editorial-wellbeing",
+    "type": "editorial",
+    "pattern": "\\bwell-being\\b",
+    "flags": "gi",
+    "message": "Use \"wellbeing\" — one word, no hyphen.",
+    "suggestion": "wellbeing"
+  },
+  {
+    "id": "editorial-workstream",
+    "type": "editorial",
+    "pattern": "\\bwork stream\\b",
+    "flags": "gi",
+    "message": "Use \"workstream\" — one word.",
+    "suggestion": "workstream"
+  },
+  {
+    "id": "editorial-workspace",
+    "type": "editorial",
+    "pattern": "\\bwork space\\b",
+    "flags": "gi",
+    "message": "Use \"workspace\" — one word.",
+    "suggestion": "workspace"
+  },
+  {
+    "id": "editorial-screenshot",
+    "type": "editorial",
+    "pattern": "\\bscreen shot\\b",
+    "flags": "gi",
+    "message": "Use \"screenshot\" — one word.",
+    "suggestion": "screenshot"
+  },
+  {
+    "id": "editorial-jumpstart",
+    "type": "editorial",
+    "pattern": "\\bjump start\\b",
+    "flags": "gi",
+    "message": "Use \"jumpstart\" — one word.",
+    "suggestion": "jumpstart"
+  },
+  {
+    "id": "editorial-kickstart",
+    "type": "editorial",
+    "pattern": "\\bkick start\\b",
+    "flags": "gi",
+    "message": "Use \"kickstart\" — one word.",
+    "suggestion": "kickstart"
+  },
+  {
+    "id": "editorial-nonprofit-hyphen",
+    "type": "editorial",
+    "pattern": "\\bnon-profit\\b",
+    "flags": "gi",
+    "message": "Use \"nonprofit\" — one word, no hyphen.",
+    "suggestion": "nonprofit"
+  },
+  {
+    "id": "editorial-barcode",
+    "type": "editorial",
+    "pattern": "\\bbar code\\b",
+    "flags": "gi",
+    "message": "Use \"barcode\" — one word.",
+    "suggestion": "barcode"
+  },
+  {
+    "id": "editorial-byproduct-slack",
+    "type": "editorial",
+    "pattern": "\\bby-product\\b",
+    "flags": "gi",
+    "message": "Per Slack style, use \"by-product\" (hyphenated).",
+    "suggestion": "by-product"
+  },
+  {
+    "id": "editorial-byproduct-sf",
+    "type": "editorial",
+    "pattern": "\\bby product\\b",
+    "flags": "gi",
+    "message": "Use \"byproduct\" (one word, per Salesforce style) or \"by-product\" (per Slack style).",
+    "suggestion": "byproduct"
+  },
+  {
+    "id": "editorial-changemaker",
+    "type": "editorial",
+    "pattern": "\\bchange maker\\b",
+    "flags": "gi",
+    "message": "Use \"changemaker\" — one word.",
+    "suggestion": "changemaker"
+  },
+  {
+    "id": "editorial-codebase",
+    "type": "editorial",
+    "pattern": "\\bcode base\\b",
+    "flags": "gi",
+    "message": "Use \"codebase\" — one word.",
+    "suggestion": "codebase"
+  },
+  {
+    "id": "editorial-whiteboard",
+    "type": "editorial",
+    "pattern": "\\bwhite board\\b",
+    "flags": "gi",
+    "message": "Use \"whiteboard\" — one word.",
+    "suggestion": "whiteboard"
+  },
+  {
+    "id": "editorial-cheatsheet",
+    "type": "editorial",
+    "pattern": "\\bcheat sheet\\b",
+    "flags": "gi",
+    "message": "Use \"cheatsheet\" — one word per Salesforce style.",
+    "suggestion": "cheatsheet"
+  },
+  {
+    "id": "editorial-metadata",
+    "type": "editorial",
+    "pattern": "\\bmeta-data\\b",
+    "flags": "gi",
+    "message": "Use \"metadata\" — one word, no hyphen.",
+    "suggestion": "metadata"
+  },
+  {
+    "id": "editorial-roundtable",
+    "type": "editorial",
+    "pattern": "\\bround table\\b",
+    "flags": "gi",
+    "message": "Use \"roundtable\" — one word.",
+    "suggestion": "roundtable"
+  },
+  {
+    "id": "editorial-voicemail",
+    "type": "editorial",
+    "pattern": "\\bvoice mail\\b",
+    "flags": "gi",
+    "message": "Use \"voicemail\" — one word.",
+    "suggestion": "voicemail"
+  },
+  {
+    "id": "editorial-slideshow",
+    "type": "editorial",
+    "pattern": "\\bslide show\\b",
+    "flags": "gi",
+    "message": "Use \"slideshow\" — one word.",
+    "suggestion": "slideshow"
+  },
+  {
+    "id": "editorial-watercooler",
+    "type": "editorial",
+    "pattern": "\\bwater cooler\\b",
+    "flags": "gi",
+    "message": "Use \"watercooler\" — one word.",
+    "suggestion": "watercooler"
+  },
+  {
+    "id": "editorial-boardroom",
+    "type": "editorial",
+    "pattern": "\\bboard room\\b",
+    "flags": "gi",
+    "message": "Use \"boardroom\" — one word.",
+    "suggestion": "boardroom"
+  },
+  {
+    "id": "editorial-bootcamp",
+    "type": "editorial",
+    "pattern": "\\bboot camp\\b",
+    "flags": "gi",
+    "message": "Use \"bootcamp\" — one word.",
+    "suggestion": "bootcamp"
+  },
+  {
+    "id": "editorial-backstory",
+    "type": "editorial",
+    "pattern": "\\bback story\\b",
+    "flags": "gi",
+    "message": "Use \"backstory\" — one word.",
+    "suggestion": "backstory"
+  },
+  {
+    "id": "editorial-meetup",
+    "type": "editorial",
+    "pattern": "\\bmeet up\\b",
+    "flags": "gi",
+    "message": "As a noun, use \"meetup\" — one word. As a verb, \"meet up\" is two words.",
+    "suggestion": "meetup (noun)"
+  },
+  {
+    "id": "editorial-standup-noun",
+    "type": "editorial",
+    "pattern": "\\bstand-up meeting\\b",
+    "flags": "gi",
+    "message": "Use \"standup\" (one word) for meeting context.",
+    "suggestion": "standup meeting"
+  },
+  {
+    "id": "editorial-white-paper",
+    "type": "editorial",
+    "pattern": "\\bwhitepaper\\b",
+    "flags": "gi",
+    "message": "Use \"white paper\" — two words.",
+    "suggestion": "white paper"
+  },
+  {
+    "id": "editorial-time-frame",
+    "type": "editorial",
+    "pattern": "\\btimeframe\\b",
+    "flags": "gi",
+    "message": "Use \"time frame\" — two words.",
+    "suggestion": "time frame"
+  },
+  {
+    "id": "editorial-end-point",
+    "type": "editorial",
+    "pattern": "\\bendpoint\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, use \"end point\" — two words.",
+    "suggestion": "end point"
+  },
+  {
+    "id": "editorial-check-mark",
+    "type": "editorial",
+    "pattern": "\\bcheckmark\\b",
+    "flags": "gi",
+    "message": "Use \"check mark\" — two words.",
+    "suggestion": "check mark"
+  },
+  {
+    "id": "editorial-file-name",
+    "type": "editorial",
+    "pattern": "\\bfilename\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, use \"file name\" — two words.",
+    "suggestion": "file name"
+  },
+  {
+    "id": "editorial-on-premise",
+    "type": "editorial",
+    "pattern": "\\bon premise\\b",
+    "flags": "gi",
+    "message": "Always use \"on premises\" (with the S) or \"on-premises\" as an adjective. \"On premise\" is incorrect.",
+    "suggestion": "on premises"
+  },
+  {
+    "id": "editorial-theatre",
+    "type": "editorial",
+    "pattern": "\\btheatre\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"theater\" — not \"theatre.\"",
+    "suggestion": "theater"
+  },
+  {
+    "id": "editorial-colour",
+    "type": "editorial",
+    "pattern": "\\bcolour(s)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"color\" — not \"colour.\"",
+    "suggestion": "color"
+  },
+  {
+    "id": "editorial-favourite",
+    "type": "editorial",
+    "pattern": "\\bfavourite(s)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"favorite\" — not \"favourite.\"",
+    "suggestion": "favorite"
+  },
+  {
+    "id": "editorial-organisation",
+    "type": "editorial",
+    "pattern": "\\borganisation(s)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"organization\" — not \"organisation.\"",
+    "suggestion": "organization"
+  },
+  {
+    "id": "editorial-analyse",
+    "type": "editorial",
+    "pattern": "\\banalyse(s|d)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"analyze\" — not \"analyse.\"",
+    "suggestion": "analyze"
+  },
+  {
+    "id": "editorial-optimise",
+    "type": "editorial",
+    "pattern": "\\boptimise(s|d)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"optimize\" — not \"optimise.\"",
+    "suggestion": "optimize"
+  },
+  {
+    "id": "editorial-recognise",
+    "type": "editorial",
+    "pattern": "\\brecognise(s|d)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"recognize\" — not \"recognise.\"",
+    "suggestion": "recognize"
+  },
+  {
+    "id": "editorial-customise",
+    "type": "editorial",
+    "pattern": "\\bcustomise(s|d)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"customize\" — not \"customise.\"",
+    "suggestion": "customize"
+  },
+  {
+    "id": "editorial-realise",
+    "type": "editorial",
+    "pattern": "\\brealise(s|d)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"realize\" — not \"realise.\"",
+    "suggestion": "realize"
+  },
+  {
+    "id": "editorial-behaviour",
+    "type": "editorial",
+    "pattern": "\\bbehaviour(s)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"behavior\" — not \"behaviour.\"",
+    "suggestion": "behavior"
+  },
+  {
+    "id": "editorial-labour",
+    "type": "editorial",
+    "pattern": "\\blabour\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"labor\" — not \"labour.\"",
+    "suggestion": "labor"
+  },
+  {
+    "id": "editorial-honour",
+    "type": "editorial",
+    "pattern": "\\bhonour(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"honor\" — not \"honour.\"",
+    "suggestion": "honor"
+  },
+  {
+    "id": "editorial-defence",
+    "type": "editorial",
+    "pattern": "\\bdefence\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"defense\" — not \"defence.\"",
+    "suggestion": "defense"
+  },
+  {
+    "id": "editorial-licence",
+    "type": "editorial",
+    "pattern": "\\blicence\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"license\" — not \"licence.\"",
+    "suggestion": "license"
+  },
+  {
+    "id": "editorial-fulfil",
+    "type": "editorial",
+    "pattern": "\\bfulfil\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"fulfill\" — not \"fulfil.\"",
+    "suggestion": "fulfill"
+  },
+  {
+    "id": "editorial-programme",
+    "type": "editorial",
+    "pattern": "\\bprogramme(s)?\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"program\" — not \"programme.\"",
+    "suggestion": "program"
+  },
+  {
+    "id": "editorial-judgement",
+    "type": "editorial",
+    "pattern": "\\bjudgement\\b",
+    "flags": "gi",
+    "message": "Use the American spelling: \"judgment\" — not \"judgement.\"",
+    "suggestion": "judgment"
+  },
+  {
+    "id": "editorial-tshirt",
+    "type": "editorial",
+    "pattern": "\\b(t-shirt|tshirt|Tshirt|t shirt)\\b",
+    "flags": "g",
+    "message": "Use \"T-shirt\" — capital T, lowercase s, hyphenated.",
+    "suggestion": "T-shirt"
+  },
+  {
+    "id": "editorial-wifi",
+    "type": "editorial",
+    "pattern": "\\b(wifi|wi fi|Wifi|WIFI)\\b",
+    "flags": "g",
+    "message": "Use \"Wi-Fi\" — capital W and F, hyphenated. It's a trademark.",
+    "suggestion": "Wi-Fi"
+  },
+  {
+    "id": "editorial-cofounder",
+    "type": "editorial",
+    "pattern": "\\b[Cc]ofounder(s)?\\b",
+    "flags": "g",
+    "message": "Use \"co-founder\" — always hyphenated.",
+    "suggestion": "co-founder"
+  },
+  {
+    "id": "editorial-coworker",
+    "type": "editorial",
+    "pattern": "\\b[Cc]oworker(s)?\\b",
+    "flags": "g",
+    "message": "Use \"co-worker\" — always hyphenated.",
+    "suggestion": "co-worker"
+  },
+  {
+    "id": "editorial-log-into",
+    "type": "editorial",
+    "pattern": "\\blog into\\b",
+    "flags": "gi",
+    "message": "Use \"log in to\" — not \"log into.\"",
+    "suggestion": "log in to"
+  },
+  {
+    "id": "editorial-sign-in",
+    "type": "editorial",
+    "pattern": "\\bsign in to Salesforce\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, use \"log in to\" — not \"sign in to\" for Salesforce.",
+    "suggestion": "log in to Salesforce"
+  },
+  {
+    "id": "editorial-comprised-of",
+    "type": "editorial",
+    "pattern": "\\bcomprised of\\b",
+    "flags": "gi",
+    "message": "\"Comprised of\" is considered ungrammatical. Use \"composed of,\" \"consists of,\" or \"comprises.\"",
+    "suggestion": "composed of, consists of, comprises"
+  },
+  {
+    "id": "editorial-beg-the-question",
+    "type": "editorial",
+    "pattern": "\\bbegs the question\\b",
+    "flags": "gi",
+    "message": "\"Begs the question\" means circular reasoning, not \"raises the question.\" If you mean the latter, say \"raises the question.\"",
+    "suggestion": "raises the question"
+  },
+  {
+    "id": "editorial-via",
+    "type": "editorial",
+    "pattern": "\\bvia\\b",
+    "flags": "gi",
+    "message": "Prefer \"through,\" \"using,\" or \"over\" instead of \"via.\"",
+    "suggestion": "through, using"
+  },
+  {
+    "id": "editorial-due-to",
+    "type": "editorial",
+    "pattern": "\\bdue to\\b",
+    "flags": "gi",
+    "message": "Consider using \"because of\" or \"as a result of\" when meaning causation rather than \"due to.\"",
+    "suggestion": "because of"
+  },
+  {
+    "id": "editorial-GenAI-caps",
+    "type": "editorial",
+    "pattern": "\\bGenAI\\b",
+    "flags": "g",
+    "message": "Use \"gen AI\" (lowercase g, space) — not \"GenAI.\"",
+    "suggestion": "gen AI"
+  },
+  {
+    "id": "editorial-slack-huddles-cap",
+    "type": "editorial",
+    "pattern": "\\bHuddles\\b",
+    "flags": "g",
+    "message": "Slack huddles should be lowercase: \"huddles\" — not \"Huddles.\"",
+    "suggestion": "huddles"
+  },
+  {
+    "id": "editorial-slack-channels-cap",
+    "type": "editorial",
+    "pattern": "\\bSlack Channels\\b",
+    "flags": "g",
+    "message": "Slack channels should be lowercase: \"Slack channels\" — not \"Slack Channels.\"",
+    "suggestion": "Slack channels"
+  },
+  {
+    "id": "editorial-slack-clips-cap",
+    "type": "editorial",
+    "pattern": "\\bSlack Clips\\b",
+    "flags": "g",
+    "message": "Slack clips should be lowercase: \"Slack clips\" — not \"Slack Clips.\" The feature name \"clips\" is always lowercase.",
+    "suggestion": "Slack clips"
+  },
+  {
+    "id": "editorial-slack-lists-cap",
+    "type": "editorial",
+    "pattern": "\\bSlack Lists\\b",
+    "flags": "g",
+    "message": "Slack lists should be lowercase: \"Slack lists\" — not \"Slack Lists.\"",
+    "suggestion": "Slack lists"
+  },
+  {
+    "id": "editorial-workflow-builder-caps",
+    "type": "editorial",
+    "pattern": "\\bworkflow builder\\b",
+    "flags": "g",
+    "message": "\"Workflow Builder\" is a proper product name — capitalize both words.",
+    "suggestion": "Workflow Builder"
+  },
+  {
+    "id": "editorial-slack-connect-caps",
+    "type": "editorial",
+    "pattern": "\\bslack connect\\b",
+    "flags": "g",
+    "message": "\"Slack Connect\" is a proper product name — capitalize both words.",
+    "suggestion": "Slack Connect"
+  },
+  {
+    "id": "editorial-slack-canvas-adj",
+    "type": "editorial",
+    "pattern": "\\bcanvas (feature|tool|collaboration|functionality)\\b",
+    "flags": "gi",
+    "message": "Do not use \"canvas\" as an adjective (e.g., \"the canvas feature\"). Just refer to \"canvases\" as a noun.",
+    "suggestion": "canvases"
+  },
+  {
+    "id": "editorial-ai-in-slack-vs-slack-ai",
+    "type": "editorial",
+    "pattern": "\\bSlack AI\\b",
+    "flags": "g",
+    "message": "\"Slack AI\" is our first-party AI product. Do not confuse with \"AI in Slack\" (third-party AI integrations). Make sure you're using the correct term.",
+    "suggestion": "Verify: Slack AI (our product) vs. AI in Slack (third-party)"
+  },
+  {
+    "id": "editorial-do-not-disturb-caps",
+    "type": "editorial",
+    "pattern": "\\bdo not disturb\\b",
+    "flags": "g",
+    "message": "\"Do Not Disturb\" is a Slack feature name — capitalize all words.",
+    "suggestion": "Do Not Disturb"
+  },
+  {
+    "id": "editorial-appexchange-caps",
+    "type": "editorial",
+    "pattern": "\\b[Aa]pp[Ee]xchange\\b",
+    "flags": "g",
+    "message": "Use \"AppExchange\" — capital A and capital E, one word. Do not add \"the\" in front.",
+    "suggestion": "AppExchange"
+  },
+  {
+    "id": "editorial-the-appexchange",
+    "type": "editorial",
+    "pattern": "\\bthe AppExchange\\b",
+    "flags": "g",
+    "message": "Do not use \"the\" before AppExchange.",
+    "suggestion": "AppExchange"
+  },
+  {
+    "id": "editorial-salesforce-customer-360-abbrev",
+    "type": "editorial",
+    "pattern": "\\bC360\\b",
+    "flags": "g",
+    "message": "Do not abbreviate \"Customer 360\" as \"C360\" in external materials. Write it out.",
+    "suggestion": "Customer 360"
+  },
+  {
+    "id": "editorial-3rd-party",
+    "type": "editorial",
+    "pattern": "\\b3rd party\\b",
+    "flags": "gi",
+    "message": "Do not write \"3rd party\" — spell out \"third party\" (noun) or \"third-party\" (adjective).",
+    "suggestion": "third party / third-party"
+  },
+  {
+    "id": "editorial-org-abbrev",
+    "type": "editorial",
+    "pattern": "\\borg\\b",
+    "flags": "g",
+    "message": "Per Salesforce style, use \"organization\" — do not abbreviate as \"org\" in external copy.",
+    "suggestion": "organization"
+  },
+  {
+    "id": "editorial-dropdowns-hyphen",
+    "type": "editorial",
+    "pattern": "\\bdrop down menu\\b",
+    "flags": "gi",
+    "message": "Use \"drop-down menu\" — hyphenate \"drop-down.\"",
+    "suggestion": "drop-down menu"
+  },
+  {
+    "id": "editorial-dropdown-sf",
+    "type": "editorial",
+    "pattern": "\\bdropdown menu\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, use \"drop-down menu\" — with a hyphen.",
+    "suggestion": "drop-down menu"
+  },
+  {
+    "id": "editorial-click-on",
+    "type": "editorial",
+    "pattern": "\\bclick on\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, do not use \"click on\" — just use \"click.\"",
+    "suggestion": "click"
+  },
+  {
+    "id": "editorial-midsize",
+    "type": "editorial",
+    "pattern": "\\b(medium-size|medium-sized|midsized)\\b",
+    "flags": "gi",
+    "message": "\"Midsize\" is the preferred term per Salesforce style.",
+    "suggestion": "midsize"
+  },
+  {
+    "id": "editorial-resume-accent",
+    "type": "editorial",
+    "pattern": "\\br\u00e9sum\u00e9\\b",
+    "flags": "gi",
+    "message": "Per AP/Salesforce style, use \"resume\" — no accent marks.",
+    "suggestion": "resume"
+  },
+  {
+    "id": "editorial-disrupter",
+    "type": "editorial",
+    "pattern": "\\bdisrupter\\b",
+    "flags": "gi",
+    "message": "Use \"disruptor\" — not \"disrupter.\"",
+    "suggestion": "disruptor"
+  },
+  {
+    "id": "editorial-planned-outage",
+    "type": "editorial",
+    "pattern": "\\bplanned outage\\b",
+    "flags": "gi",
+    "message": "Use \"planned maintenance\" instead of \"planned outage.\"",
+    "suggestion": "planned maintenance"
+  },
+  {
+    "id": "editorial-hacker",
+    "type": "editorial",
+    "pattern": "\\bhacker(s)?\\b",
+    "flags": "gi",
+    "message": "Per Salesforce style, use \"unauthorized third party\" instead of \"hacker.\"",
+    "suggestion": "unauthorized third party"
+  },
+  {
+    "id": "editorial-data-loss",
+    "type": "editorial",
+    "pattern": "\\bdata loss\\b",
+    "flags": "gi",
+    "message": "Avoid using \"data loss\" — it's a sensitive term from a competitive standpoint.",
+    "suggestion": "Consider rephrasing"
+  },
+  {
+    "id": "editorial-o365",
+    "type": "editorial",
+    "pattern": "\\bO365\\b",
+    "flags": "g",
+    "message": "Do not abbreviate as \"O365.\" Use \"Office 365\" (with \"Microsoft\" on first mention).",
+    "suggestion": "Office 365"
+  },
+  {
+    "id": "editorial-g-suite",
+    "type": "editorial",
+    "pattern": "\\bG Suite\\b",
+    "flags": "g",
+    "message": "G Suite has been renamed to \"Google Workspace.\"",
+    "suggestion": "Google Workspace"
+  },
+  {
+    "id": "editorial-bottoms-up",
+    "type": "editorial",
+    "pattern": "\\bbottoms-up\\b",
+    "flags": "gi",
+    "message": "Use \"bottom-up\" (adjective) — not \"bottoms-up.\"",
+    "suggestion": "bottom-up"
+  },
+  {
+    "id": "editorial-til",
+    "type": "editorial",
+    "pattern": "\\b'til\\b",
+    "flags": "gi",
+    "message": "Use \"till\" — not \"'til\" — as short for \"until.\"",
+    "suggestion": "till"
+  },
+  {
+    "id": "editorial-aeon",
+    "type": "editorial",
+    "pattern": "\\baeon\\b",
+    "flags": "gi",
+    "message": "Use \"eon\" — not \"aeon.\"",
+    "suggestion": "eon"
+  },
+  {
+    "id": "editorial-naive-accent",
+    "type": "editorial",
+    "pattern": "\\bna\u00efve\\b",
+    "flags": "gi",
+    "message": "Use \"naive\" — no diacritical marks per Slack style.",
+    "suggestion": "naive"
+  },
+  {
+    "id": "editorial-blog-as-article",
+    "type": "editorial",
+    "pattern": "\\bread (?:the|this|our|my) blog\\b",
+    "flags": "gi",
+    "message": "An individual article is a \"blog post\" — not \"a blog.\" \"Blog\" refers to the publication itself.",
+    "suggestion": "blog post"
+  },
+  {
+    "id": "editorial-double-space-period",
+    "type": "editorial",
+    "pattern": "\\.  ",
+    "flags": "g",
+    "message": "Use a single space after a period, not a double space.",
+    "suggestion": ". (single space)"
+  },
+  {
+    "id": "editorial-insure-for-ensure",
+    "type": "editorial",
+    "pattern": "\\binsure(s)? that\\b",
+    "flags": "gi",
+    "message": "\"Insure\" means to indemnify against loss. If you mean \"make certain,\" use \"ensure.\"",
+    "suggestion": "ensure"
+  },
+  {
+    "id": "editorial-assure-for-ensure",
+    "type": "editorial",
+    "pattern": "\\bassure(s)? that\\b",
+    "flags": "gi",
+    "message": "\"Assure\" means to set someone's mind at rest. If you mean \"make certain,\" use \"ensure.\"",
+    "suggestion": "ensure"
+  },
+  {
+    "id": "editorial-times-more",
+    "type": "editorial",
+    "pattern": "\\b\\d+x? times (more|faster|bigger|larger|greater|better)\\b",
+    "flags": "gi",
+    "message": "\"Times more/faster\" is ambiguous. Use \"times as much\" or \"times as fast\" for clarity.",
+    "suggestion": "times as much, times as fast"
+  },
+  {
+    "id": "editorial-times-less",
+    "type": "editorial",
+    "pattern": "\\b\\d+x? times (less|smaller|fewer|slower|shorter|thinner)\\b",
+    "flags": "gi",
+    "message": "\"Times less\" is mathematically incorrect. Use \"one-third as much\" or similar fraction instead.",
+    "suggestion": "Rephrase using a fraction (e.g., one-third as much)"
+  },
+  {
+    "id": "editorial-sales-elevate",
+    "type": "editorial",
+    "pattern": "\\bSales Elevate\\b",
+    "flags": "g",
+    "message": "Use \"Slack Sales Elevate\" on first reference.",
+    "suggestion": "Slack Sales Elevate"
+  },
+  {
+    "id": "editorial-slack-marketplace-old",
+    "type": "editorial",
+    "pattern": "\\bSlack App Directory\\b",
+    "flags": "g",
+    "message": "The Slack App Directory has been renamed to \"Slack Marketplace.\"",
+    "suggestion": "Slack Marketplace"
+  },
+  {
+    "id": "editorial-record-channels",
+    "type": "editorial",
+    "pattern": "\\brecord channels\\b",
+    "flags": "gi",
+    "message": "\"Record channels\" has been renamed to \"Salesforce channels.\"",
+    "suggestion": "Salesforce channels"
+  },
+  {
+    "id": "editorial-customer-success-platform",
+    "type": "editorial",
+    "pattern": "\\bCustomer Success Platform\\b",
+    "flags": "g",
+    "message": "\"Customer Success Platform\" is deprecated. Use \"Salesforce Customer 360.\"",
+    "suggestion": "Salesforce Customer 360"
+  },
+  {
+    "id": "editorial-chatter-mobile",
+    "type": "editorial",
+    "pattern": "\\bChatter Mobile\\b",
+    "flags": "g",
+    "message": "\"Chatter Mobile\" is deprecated. Use \"Salesforce mobile app.\"",
+    "suggestion": "Salesforce mobile app"
+  },
+  {
+    "id": "editorial-einstein-brand",
+    "type": "editorial",
+    "pattern": "\\bEinstein\\b",
+    "flags": "g",
+    "message": "The Einstein brand is retired. Do not use it for anything new. Replace with the appropriate current term (e.g., \"Trust Layer\" instead of \"Einstein Trust Layer\").",
+    "suggestion": "Remove Einstein branding"
+  },
+  {
+    "id": "editorial-salesforceiq",
+    "type": "editorial",
+    "pattern": "\\bSalesforceIQ\\b",
+    "flags": "g",
+    "message": "\"SalesforceIQ\" is deprecated. Use \"Salesforce Inbox.\"",
+    "suggestion": "Salesforce Inbox"
+  },
+  {
+    "id": "editorial-shared-channels-cap",
+    "type": "editorial",
+    "pattern": "\\bShared [Cc]hannels\\b",
+    "flags": "g",
+    "message": "\"Shared channels\" should always be lowercase.",
+    "suggestion": "shared channels"
+  },
+  {
+    "id": "editorial-shortcuts-cap",
+    "type": "editorial",
+    "pattern": "\\bSlack Shortcuts\\b",
+    "flags": "g",
+    "message": "\"Shortcuts\" (the Slack feature) should be lowercase.",
+    "suggestion": "Slack shortcuts"
+  },
+  {
+    "id": "editorial-recap-cap",
+    "type": "editorial",
+    "pattern": "\\bSlack Recap\\b",
+    "flags": "g",
+    "message": "The Slack AI feature is called \"Recap\" when used as a proper feature name, but \"recap\" or \"recaps\" in general use should be lowercase.",
+    "suggestion": "Verify capitalization of Recap"
+  },
+  {
+    "id": "editorial-split-view-cap",
+    "type": "editorial",
+    "pattern": "\\bSplit View\\b",
+    "flags": "g",
+    "message": "The Slack feature \"split view\" should be lowercase.",
+    "suggestion": "split view"
+  },
+  {
+    "id": "editorial-at-mention",
+    "type": "editorial",
+    "pattern": "\\bat-mention\\b",
+    "flags": "gi",
+    "message": "Use \"@mention\" — not \"at-mention.\"",
+    "suggestion": "@mention"
+  },
+  {
+    "id": "editorial-24x7",
+    "type": "editorial",
+    "pattern": "\\b24x7\\b",
+    "flags": "g",
+    "message": "Use \"24/7\" (with a slash) — not \"24x7.\"",
+    "suggestion": "24/7"
+  },
+  {
+    "id": "editorial-24-7-hyphen",
+    "type": "editorial",
+    "pattern": "\\b24-7\\b",
+    "flags": "g",
+    "message": "Use \"24/7\" (with a slash) — not \"24-7.\"",
+    "suggestion": "24/7"
+  },
+  {
+    "id": "editorial-work-life-slash",
+    "type": "editorial",
+    "pattern": "\\bwork/life\\b",
+    "flags": "gi",
+    "message": "Use \"work-life\" (hyphenated) — not \"work/life\" with a slash.",
+    "suggestion": "work-life"
+  },
+  {
+    "id": "editorial-says-attribution",
+    "type": "editorial",
+    "pattern": ",\" says \\b",
+    "flags": "g",
+    "message": "For quote attributions in body copy, use \"said\" (past tense) — not \"says.\"",
+    "suggestion": "said"
+  },
+  {
+    "id": "editorial-devops-caps",
+    "type": "editorial",
+    "pattern": "\\b(Devops|devops|DEVOPS|devOps)\\b",
+    "flags": "g",
+    "message": "Use \"DevOps\" — capital D and capital O.",
+    "suggestion": "DevOps"
+  },
+  {
+    "id": "editorial-javascript-caps",
+    "type": "editorial",
+    "pattern": "\\b(Javascript|javascript|JAVASCRIPT)\\b",
+    "flags": "g",
+    "message": "Use \"JavaScript\" — capital J and capital S.",
+    "suggestion": "JavaScript"
+  },
+  {
+    "id": "editorial-linkedin-caps",
+    "type": "editorial",
+    "pattern": "\\b(Linkedin|linkedin)\\b",
+    "flags": "g",
+    "message": "Use \"LinkedIn\" — capital L and capital I.",
+    "suggestion": "LinkedIn"
+  },
+  {
+    "id": "editorial-github-caps",
+    "type": "editorial",
+    "pattern": "\\b(Github|github)\\b",
+    "flags": "g",
+    "message": "Use \"GitHub\" — capital G and capital H.",
+    "suggestion": "GitHub"
+  },
+  {
+    "id": "editorial-sharepoint-caps",
+    "type": "editorial",
+    "pattern": "\\b(Sharepoint|sharepoint)\\b",
+    "flags": "g",
+    "message": "Use \"SharePoint\" — capital S and capital P.",
+    "suggestion": "SharePoint"
+  },
+  {
+    "id": "editorial-chatgpt-caps",
+    "type": "editorial",
+    "pattern": "\\b(Chatgpt|chatgpt|chatGPT)\\b",
+    "flags": "g",
+    "message": "Use \"ChatGPT\" — capital C, G, P, T.",
+    "suggestion": "ChatGPT"
+  },
+  {
+    "id": "editorial-iphone-start",
+    "type": "editorial",
+    "pattern": "\\bIphone\\b",
+    "flags": "g",
+    "message": "Use \"iPhone\" — lowercase i, capital P.",
+    "suggestion": "iPhone"
+  },
+  {
+    "id": "editorial-ipad-caps",
+    "type": "editorial",
+    "pattern": "\\bIpad\\b",
+    "flags": "g",
+    "message": "Use \"iPad\" — lowercase i, capital P.",
+    "suggestion": "iPad"
+  },
+  {
+    "id": "editorial-webex-caps",
+    "type": "editorial",
+    "pattern": "\\b(WebEx|WEBEX|webex)\\b",
+    "flags": "g",
+    "message": "Use \"Webex\" — capital W only.",
+    "suggestion": "Webex"
+  },
+  {
+    "id": "editorial-mailchimp-caps",
+    "type": "editorial",
+    "pattern": "\\b(MailChimp|Mailchimp|mailchimp)\\b",
+    "flags": "g",
+    "message": "Use \"Mailchimp\" — capital M only, no capital C.",
+    "suggestion": "Mailchimp"
+  },
+  {
+    "id": "editorial-zendesk-caps",
+    "type": "editorial",
+    "pattern": "\\b(zendesk|ZENDESK)\\b",
+    "flags": "g",
+    "message": "Use \"Zendesk\" — capital Z.",
+    "suggestion": "Zendesk"
+  },
+  {
+    "id": "editorial-jira-caps",
+    "type": "editorial",
+    "pattern": "\\b(jira|JIRA)\\b",
+    "flags": "g",
+    "message": "Use \"Jira\" — capital J only.",
+    "suggestion": "Jira"
+  },
+  {
+    "id": "editorial-dropbox-caps",
+    "type": "editorial",
+    "pattern": "\\b(dropbox|DROPBOX)\\b",
+    "flags": "g",
+    "message": "Use \"Dropbox\" — capital D.",
+    "suggestion": "Dropbox"
+  },
+  {
+    "id": "jargon-seamless",
+    "type": "jargon",
+    "pattern": "\\bseamless(ly)?\\b",
+    "flags": "gi",
+    "message": "Avoid \"seamless\" — it's overused and vague.",
+    "suggestion": "smooth, easy, simple, effortless"
+  },
+  {
+    "id": "jargon-scale",
+    "type": "jargon",
+    "pattern": "\\bscal(e|es|ed|ing|able|ability)\\b",
+    "flags": "gi",
+    "message": "Avoid \"scale\" — it's corporate jargon.",
+    "suggestion": "grow, expand, support more"
+  },
+  {
+    "id": "editorial-startup-hyphen",
+    "type": "editorial",
+    "pattern": "\\bstart-up\\b",
+    "flags": "gi",
+    "message": "Don't hyphenate — use \"startup\" (one word) for a new business, or \"start up\" (two words) for booting a computer.",
+    "suggestion": "startup"
+  },
+  {
+    "id": "editorial-teammate",
+    "type": "editorial",
+    "pattern": "\\bteam-mate(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"teammate\" — one word.",
+    "suggestion": "teammate"
+  },
+  {
+    "id": "editorial-timeline",
+    "type": "editorial",
+    "pattern": "\\btime line(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"timeline\" — one word.",
+    "suggestion": "timeline"
+  },
+  {
+    "id": "editorial-timestamp",
+    "type": "editorial",
+    "pattern": "\\btime stamp(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"timestamp\" — one word.",
+    "suggestion": "timestamp"
+  },
+  {
+    "id": "editorial-firsthand",
+    "type": "editorial",
+    "pattern": "\\bfirst-hand\\b",
+    "flags": "gi",
+    "message": "Use \"firsthand\" — one word, no hyphen.",
+    "suggestion": "firsthand"
+  },
+  {
+    "id": "editorial-fundraising",
+    "type": "editorial",
+    "pattern": "\\bfund-raising\\b",
+    "flags": "gi",
+    "message": "Use \"fundraising\" — one word, no hyphen.",
+    "suggestion": "fundraising"
+  },
+  {
+    "id": "editorial-companywide",
+    "type": "editorial",
+    "pattern": "\\bcompany-wide\\b",
+    "flags": "gi",
+    "message": "Use \"companywide\" — one word, no hyphen.",
+    "suggestion": "companywide"
+  },
+  {
+    "id": "editorial-worldwide",
+    "type": "editorial",
+    "pattern": "\\bworld-wide\\b",
+    "flags": "gi",
+    "message": "Use \"worldwide\" — one word, no hyphen.",
+    "suggestion": "worldwide"
+  },
+  {
+    "id": "editorial-checkbox",
+    "type": "editorial",
+    "pattern": "\\bcheck box(es)?\\b",
+    "flags": "gi",
+    "message": "Use \"checkbox\" — one word.",
+    "suggestion": "checkbox"
+  },
+  {
+    "id": "editorial-dropdown",
+    "type": "editorial",
+    "pattern": "\\bdrop-down(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"dropdown\" — one word, no hyphen.",
+    "suggestion": "dropdown"
+  },
+  {
+    "id": "editorial-brand-new",
+    "type": "editorial",
+    "pattern": "\\bbrand new\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"brand-new\" when used as an adjective before a noun.",
+    "suggestion": "brand-new"
+  },
+  {
+    "id": "editorial-plugin",
+    "type": "editorial",
+    "pattern": "\\bplug in(s)?\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"plug-in\" as a noun or adjective. Use \"plug in\" only as a verb phrase.",
+    "suggestion": "plug-in"
+  },
+  {
+    "id": "editorial-builtin",
+    "type": "editorial",
+    "pattern": "\\bbuild-in\\b",
+    "flags": "gi",
+    "message": "Use \"built-in\" (hyphenated) as an adjective.",
+    "suggestion": "built-in"
+  },
+  {
+    "id": "editorial-double-click",
+    "type": "editorial",
+    "pattern": "\\bdoubleclick(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"double-click.\"",
+    "suggestion": "double-click"
+  },
+  {
+    "id": "editorial-right-click",
+    "type": "editorial",
+    "pattern": "\\brightclick(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"right-click.\"",
+    "suggestion": "right-click"
+  },
+  {
+    "id": "editorial-recreate",
+    "type": "editorial",
+    "pattern": "\\brecreat(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Use \"re-create\" (hyphenated) to mean \"create again.\" \"Recreate\" means to enjoy leisure.",
+    "suggestion": "re-create"
+  },
+  {
+    "id": "editorial-cosell",
+    "type": "editorial",
+    "pattern": "\\bcosell(s|ing)?\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"co-sell.\"",
+    "suggestion": "co-sell"
+  },
+  {
+    "id": "editorial-popup",
+    "type": "editorial",
+    "pattern": "\\bpop up(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"pop-up\" (hyphenated) as a noun or adjective. Use \"pop up\" only as a verb phrase.",
+    "suggestion": "pop-up"
+  },
+  {
+    "id": "editorial-bestseller",
+    "type": "editorial",
+    "pattern": "\\bbest-seller(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"bestseller\" — one word, no hyphen.",
+    "suggestion": "bestseller"
+  },
+  {
+    "id": "editorial-editor-in-chief",
+    "type": "editorial",
+    "pattern": "\\beditor-in-chief\\b",
+    "flags": "gi",
+    "message": "Use \"editor in chief\" — no hyphens per Salesforce style.",
+    "suggestion": "editor in chief"
+  },
+  {
+    "id": "editorial-ecommerce",
+    "type": "editorial",
+    "pattern": "\\be-commerce\\b",
+    "flags": "gi",
+    "message": "Use \"ecommerce\" — one word, no hyphen.",
+    "suggestion": "ecommerce"
+  },
+  {
+    "id": "editorial-ebook",
+    "type": "editorial",
+    "pattern": "\\be-book(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"ebook\" — one word, no hyphen.",
+    "suggestion": "ebook"
+  },
+  {
+    "id": "editorial-email-no-hyphen",
+    "type": "editorial",
+    "pattern": "\\be-mail(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Use \"email\" — no hyphen.",
+    "suggestion": "email"
+  },
+  {
+    "id": "editorial-website",
+    "type": "editorial",
+    "pattern": "\\bweb site(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"website\" — one word.",
+    "suggestion": "website"
+  },
+  {
+    "id": "editorial-webpage",
+    "type": "editorial",
+    "pattern": "\\bweb page(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"webpage\" — one word.",
+    "suggestion": "webpage"
+  },
+  {
+    "id": "editorial-online",
+    "type": "editorial",
+    "pattern": "\\bon-line\\b",
+    "flags": "gi",
+    "message": "Use \"online\" — one word, no hyphen.",
+    "suggestion": "online"
+  },
+  {
+    "id": "editorial-nonprofit",
+    "type": "editorial",
+    "pattern": "\\bnon-profit(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"nonprofit\" — one word, no hyphen.",
+    "suggestion": "nonprofit"
+  },
+  {
+    "id": "editorial-workforce",
+    "type": "editorial",
+    "pattern": "\\bwork force\\b",
+    "flags": "gi",
+    "message": "Use \"workforce\" — one word.",
+    "suggestion": "workforce"
+  },
+  {
+    "id": "editorial-workflow-oneword",
+    "type": "editorial",
+    "pattern": "\\bwork flow(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"workflow\" — one word.",
+    "suggestion": "workflow"
+  },
+  {
+    "id": "editorial-database",
+    "type": "editorial",
+    "pattern": "\\bdata base(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"database\" — one word.",
+    "suggestion": "database"
+  },
+  {
+    "id": "editorial-multicloud",
+    "type": "editorial",
+    "pattern": "\\bmulti-cloud\\b",
+    "flags": "gi",
+    "message": "Use \"multicloud\" — one word, no hyphen.",
+    "suggestion": "multicloud"
+  },
+  {
+    "id": "editorial-omnichannel",
+    "type": "editorial",
+    "pattern": "\\bomni-channel\\b",
+    "flags": "gi",
+    "message": "Use \"omnichannel\" — one word, no hyphen.",
+    "suggestion": "omnichannel"
+  },
+  {
+    "id": "editorial-back-end",
+    "type": "editorial",
+    "pattern": "\\bbackend\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"back-end\" as an adjective. Use \"back end\" as a noun.",
+    "suggestion": "back-end"
+  },
+  {
+    "id": "editorial-front-end",
+    "type": "editorial",
+    "pattern": "\\bfrontend\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"front-end\" as an adjective. Use \"front end\" as a noun.",
+    "suggestion": "front-end"
+  },
+  {
+    "id": "editorial-replatform",
+    "type": "editorial",
+    "pattern": "\\breplatform(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"re-platform.\"",
+    "suggestion": "re-platform"
+  },
+  {
+    "id": "editorial-prebuilt",
+    "type": "editorial",
+    "pattern": "\\bpre-built\\b",
+    "flags": "gi",
+    "message": "Use \"prebuilt\" — one word, no hyphen.",
+    "suggestion": "prebuilt"
+  },
+  {
+    "id": "editorial-preconfigured",
+    "type": "editorial",
+    "pattern": "\\bpre-configured\\b",
+    "flags": "gi",
+    "message": "Use \"preconfigured\" — one word, no hyphen.",
+    "suggestion": "preconfigured"
+  },
+  {
+    "id": "editorial-offboarding",
+    "type": "editorial",
+    "pattern": "\\boff-boarding\\b",
+    "flags": "gi",
+    "message": "Use \"offboarding\" — one word, no hyphen.",
+    "suggestion": "offboarding"
+  },
+  {
+    "id": "editorial-onboarding",
+    "type": "editorial",
+    "pattern": "\\bon-boarding\\b",
+    "flags": "gi",
+    "message": "Use \"onboarding\" — one word, no hyphen.",
+    "suggestion": "onboarding"
+  },
+  {
+    "id": "editorial-realtime",
+    "type": "editorial",
+    "pattern": "\\brealtime\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"real-time\" as an adjective. Use \"real time\" as a noun.",
+    "suggestion": "real-time"
+  },
+  {
+    "id": "editorial-lowcode",
+    "type": "editorial",
+    "pattern": "\\blowcode\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"low-code.\"",
+    "suggestion": "low-code"
+  },
+  {
+    "id": "editorial-nocode",
+    "type": "editorial",
+    "pattern": "\\bnocode\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"no-code.\"",
+    "suggestion": "no-code"
+  },
+  {
+    "id": "editorial-third-party",
+    "type": "editorial",
+    "pattern": "\\bthirdparty\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"third-party\" as an adjective.",
+    "suggestion": "third-party"
+  },
+  {
+    "id": "editorial-cross-sell",
+    "type": "editorial",
+    "pattern": "\\bcrosssell(s|ing)?\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"cross-sell.\"",
+    "suggestion": "cross-sell"
+  },
+  {
+    "id": "editorial-upsell",
+    "type": "editorial",
+    "pattern": "\\bup-sell(s|ing)?\\b",
+    "flags": "gi",
+    "message": "Use \"upsell\" — one word, no hyphen.",
+    "suggestion": "upsell"
+  },
+  {
+    "id": "editorial-saas-caps",
+    "type": "editorial",
+    "pattern": "\\b(Saas|saas|SAAS)\\b",
+    "flags": "g",
+    "message": "Use \"SaaS\" — capital S, lowercase a-a, capital S.",
+    "suggestion": "SaaS"
+  },
+  {
+    "id": "editorial-paas-caps",
+    "type": "editorial",
+    "pattern": "\\b(Paas|paas|PAAS)\\b",
+    "flags": "g",
+    "message": "Use \"PaaS\" — capital P, lowercase a-a, capital S.",
+    "suggestion": "PaaS"
+  },
+  {
+    "id": "editorial-steelbrick",
+    "type": "editorial",
+    "pattern": "\\bSteelBrick\\b",
+    "flags": "g",
+    "message": "SteelBrick is retired. Use the current Salesforce CPQ product name.",
+    "suggestion": "Salesforce CPQ"
+  },
+  {
+    "id": "editorial-android-market",
+    "type": "editorial",
+    "pattern": "\\bAndroid Market\\b",
+    "flags": "g",
+    "message": "Android Market is obsolete. Use \"Google Play.\"",
+    "suggestion": "Google Play"
+  },
+  {
+    "id": "editorial-dream-valley",
+    "type": "editorial",
+    "pattern": "\\bDream Valley\\b",
+    "flags": "g",
+    "message": "\"Dream Valley\" is a retired event name. Check current Salesforce event naming.",
+    "suggestion": ""
+  },
+  {
+    "id": "editorial-dreampark",
+    "type": "editorial",
+    "pattern": "\\bDreampark\\b",
+    "flags": "g",
+    "message": "\"Dreampark\" is a retired event name. Check current Salesforce event naming.",
+    "suggestion": ""
+  },
+  {
+    "id": "jargon-wall-to-wall",
+    "type": "jargon",
+    "pattern": "\\bwall-to-wall\\b",
+    "flags": "gi",
+    "message": "\"Wall-to-wall\" is internal Salesforce jargon. Don't use it in external-facing copy.",
+    "suggestion": "company-wide, across the organization"
+  },
+  {
+    "id": "editorial-createable",
+    "type": "editorial",
+    "pattern": "\\bcreatable\\b",
+    "flags": "gi",
+    "message": "Use \"createable\" — not \"creatable\" (Salesforce preferred spelling).",
+    "suggestion": "createable"
+  },
+  {
+    "id": "editorial-pore-over",
+    "type": "editorial",
+    "pattern": "\\bpour(s|ed|ing)? over\\b",
+    "flags": "gi",
+    "message": "When meaning \"to study carefully,\" use \"pore over\" — not \"pour over.\"",
+    "suggestion": "pore over"
+  },
+  {
+    "id": "editorial-nascar",
+    "type": "editorial",
+    "pattern": "\\bNASCAR\\b",
+    "flags": "g",
+    "message": "Use \"Nascar\" — not all caps.",
+    "suggestion": "Nascar"
+  },
+  {
+    "id": "editorial-daylong",
+    "type": "editorial",
+    "pattern": "\\bday-long\\b",
+    "flags": "gi",
+    "message": "Use \"daylong\" — one word, no hyphen.",
+    "suggestion": "daylong"
+  },
+  {
+    "id": "editorial-weeklong",
+    "type": "editorial",
+    "pattern": "\\bweek-long\\b",
+    "flags": "gi",
+    "message": "Use \"weeklong\" — one word, no hyphen.",
+    "suggestion": "weeklong"
+  },
+  {
+    "id": "editorial-yearlong",
+    "type": "editorial",
+    "pattern": "\\byear-long\\b",
+    "flags": "gi",
+    "message": "Use \"yearlong\" — one word, no hyphen.",
+    "suggestion": "yearlong"
+  },
+  {
+    "id": "editorial-monthlong",
+    "type": "editorial",
+    "pattern": "\\bmonth-long\\b",
+    "flags": "gi",
+    "message": "Use \"monthlong\" — one word, no hyphen.",
+    "suggestion": "monthlong"
+  },
+  {
+    "id": "editorial-subhead",
+    "type": "editorial",
+    "pattern": "\\bsub-head(s|line|lines)?\\b",
+    "flags": "gi",
+    "message": "Use \"subhead\" or \"subheadline\" — no hyphen.",
+    "suggestion": "subhead"
+  },
+  {
+    "id": "editorial-homegrown",
+    "type": "editorial",
+    "pattern": "\\bhome-grown\\b",
+    "flags": "gi",
+    "message": "Use \"homegrown\" — one word, no hyphen.",
+    "suggestion": "homegrown"
+  },
+  {
+    "id": "editorial-groundbreaking",
+    "type": "editorial",
+    "pattern": "\\bground-breaking\\b",
+    "flags": "gi",
+    "message": "Use \"groundbreaking\" — one word, no hyphen.",
+    "suggestion": "groundbreaking"
+  },
+  {
+    "id": "editorial-cutting-edge",
+    "type": "editorial",
+    "pattern": "\\bcuttingedge\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"cutting-edge\" when used as an adjective.",
+    "suggestion": "cutting-edge"
+  },
+  {
+    "id": "editorial-wellknown",
+    "type": "editorial",
+    "pattern": "\\bwell known\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"well-known\" when used as an adjective before a noun.",
+    "suggestion": "well-known"
+  },
+  {
+    "id": "editorial-inperson",
+    "type": "editorial",
+    "pattern": "\\bin person\\b",
+    "flags": "gi",
+    "message": "Hyphenate \"in-person\" when used as an adjective before a noun.",
+    "suggestion": "in-person"
+  },
+  {
+    "id": "editorial-sign-up-noun",
+    "type": "editorial",
+    "pattern": "\\bsignup(s)?\\b",
+    "flags": "gi",
+    "message": "As a noun or adjective, use \"sign-up\" (hyphenated). As a verb, use \"sign up\" (two words).",
+    "suggestion": "sign-up"
+  },
+  {
+    "id": "editorial-rollout",
+    "type": "editorial",
+    "pattern": "\\broll-out(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"rollout\" — one word, no hyphen (as a noun).",
+    "suggestion": "rollout"
+  },
+  {
+    "id": "editorial-walkthrough",
+    "type": "editorial",
+    "pattern": "\\bwalk-through(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"walkthrough\" — one word, no hyphen (as a noun).",
+    "suggestion": "walkthrough"
+  },
+  {
+    "id": "editorial-workaround",
+    "type": "editorial",
+    "pattern": "\\bwork-around(s)?\\b",
+    "flags": "gi",
+    "message": "Use \"workaround\" — one word, no hyphen.",
+    "suggestion": "workaround"
+  }
+]
