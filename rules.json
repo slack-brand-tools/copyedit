@@ -4,7 +4,7 @@
     "type": "jargon",
     "pattern": "\\baccelerati(ng|on|ons|e|es|ed)\\b",
     "flags": "gi",
-    "message": "Avoid \"accelerate\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "speed up"
   },
   {
@@ -12,7 +12,7 @@
     "type": "jargon",
     "pattern": "\\bactionable\\b",
     "flags": "gi",
-    "message": "Avoid \"actionable\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "functional, viable"
   },
   {
@@ -20,7 +20,7 @@
     "type": "jargon",
     "pattern": "\\bactivat(e|es|ed|ing|ion|ions)\\b",
     "flags": "gi",
-    "message": "Avoid \"activate\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "motivate, prompt"
   },
   {
@@ -28,7 +28,7 @@
     "type": "jargon",
     "pattern": "\\balignment\\b",
     "flags": "gi",
-    "message": "Avoid \"alignment\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "agree with, agreement"
   },
   {
@@ -52,7 +52,7 @@
     "type": "jargon",
     "pattern": "\\bbaseline\\b",
     "flags": "gi",
-    "message": "Avoid \"baseline\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "basic standard, level"
   },
   {
@@ -60,7 +60,7 @@
     "type": "jargon",
     "pattern": "\\bbespoke\\b",
     "flags": "gi",
-    "message": "Avoid \"bespoke\" — it's corporate jargon.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "custom, custom fit"
   },
   {
@@ -68,7 +68,7 @@
     "type": "jargon",
     "pattern": "\\bbest[- ]in[- ]class\\b",
     "flags": "gi",
-    "message": "Avoid \"best-in-class\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what makes it the best.",
     "suggestion": "best"
   },
   {
@@ -76,7 +76,7 @@
     "type": "jargon",
     "pattern": "\\bblue[- ]sky\\b",
     "flags": "gi",
-    "message": "Avoid \"blue sky\" / \"blue-sky thinking\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "limitless possibility, brainstorming"
   },
   {
@@ -84,7 +84,7 @@
     "type": "jargon",
     "pattern": "\\bbusiness value\\b",
     "flags": "gi",
-    "message": "Avoid \"business value\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "value, benefit"
   },
   {
@@ -92,7 +92,7 @@
     "type": "jargon",
     "pattern": "\\bbuzzworthy\\b",
     "flags": "gi",
-    "message": "Avoid \"buzzworthy\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what makes it exciting.",
     "suggestion": "exciting"
   },
   {
@@ -100,7 +100,7 @@
     "type": "jargon",
     "pattern": "\\bCOB\\b",
     "flags": "g",
-    "message": "Avoid \"COB\" — it's corporate jargon.",
+    "message": "Internal shorthand — not everyone knows what this means.",
     "suggestion": "5:00 p.m."
   },
   {
@@ -108,7 +108,7 @@
     "type": "jargon",
     "pattern": "\\bdeep[- ]div(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"deep dive\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "analysis, detailed description"
   },
   {
@@ -116,7 +116,7 @@
     "type": "jargon",
     "pattern": "\\bdisrupt(s|ed|ing|ion|ive|or)?\\b",
     "flags": "gi",
-    "message": "Avoid \"disrupt\" in the jargon sense — it sounds dated.",
+    "message": "Hype language — sounds dated. Be specific about what's changing.",
     "suggestion": "try something different, innovate, change"
   },
   {
@@ -124,7 +124,7 @@
     "type": "jargon",
     "pattern": "\\bdriv(e|es|ing) (?:innovation|growth|results|value|change|engagement|revenue|success|transformation|outcomes|impact)\\b",
     "flags": "gi",
-    "message": "Avoid \"drive\" as corporate jargon when paired with abstract concepts.",
+    "message": "Corporate-speak — \"drive\" + abstract noun is a telltale pattern.",
     "suggestion": "influence, reinforce, increase, encourage, promote"
   },
   {
@@ -132,7 +132,7 @@
     "type": "jargon",
     "pattern": "\\becosystem\\b",
     "flags": "gi",
-    "message": "Avoid \"ecosystem\" — it's corporate jargon.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "environment"
   },
   {
@@ -140,7 +140,7 @@
     "type": "jargon",
     "pattern": "\\beleva(te|tes|ted|ting) productivity\\b",
     "flags": "gi",
-    "message": "Avoid \"elevate productivity\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "raise productivity, make your teams more productive"
   },
   {
@@ -148,7 +148,7 @@
     "type": "jargon",
     "pattern": "\\bempower(s|ed|ing|ment)?\\b",
     "flags": "gi",
-    "message": "Avoid \"empower\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "help, entrust"
   },
   {
@@ -156,7 +156,7 @@
     "type": "jargon",
     "pattern": "\\benabl(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"enable\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "help, turn on"
   },
   {
@@ -164,7 +164,7 @@
     "type": "jargon",
     "pattern": "\\benablement\\b",
     "flags": "gi",
-    "message": "Avoid \"enablement\" — it's not a real word.",
+    "message": "Vague verb — \"enablement\" isn't even a real word.",
     "suggestion": "help, facilitation, provide assistance"
   },
   {
@@ -172,7 +172,7 @@
     "type": "jargon",
     "pattern": "\\bendeavor(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"endeavor\" — it's corporate jargon.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "goal"
   },
   {
@@ -180,7 +180,7 @@
     "type": "jargon",
     "pattern": "\\bEOD\\b",
     "flags": "g",
-    "message": "Avoid \"EOD\" — it's corporate jargon.",
+    "message": "Internal shorthand — not everyone knows what this means.",
     "suggestion": "this evening, by 5:00 p.m."
   },
   {
@@ -188,7 +188,7 @@
     "type": "jargon",
     "pattern": "\\bfunctionality\\b",
     "flags": "gi",
-    "message": "Avoid \"functionality\" — it's corporate jargon.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "use, what it can do"
   },
   {
@@ -196,7 +196,7 @@
     "type": "jargon",
     "pattern": "\\bgame[- ]changer(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"game changer\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what's actually changing.",
     "suggestion": "catalyst, turning point, difference"
   },
   {
@@ -204,7 +204,7 @@
     "type": "jargon",
     "pattern": "\\bgranular(ity)?\\b",
     "flags": "gi",
-    "message": "Avoid \"granular\" — it's corporate jargon.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "detailed, specific"
   },
   {
@@ -212,7 +212,7 @@
     "type": "jargon",
     "pattern": "\\bharness(es|ed|ing)?\\b",
     "flags": "gi",
-    "message": "Avoid \"harness\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "use"
   },
   {
@@ -220,7 +220,7 @@
     "type": "jargon",
     "pattern": "\\bhyperscal(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"hyperscale\" — it's corporate jargon.",
+    "message": "Hype language — be specific about the scale you mean.",
     "suggestion": "grow quickly"
   },
   {
@@ -228,7 +228,7 @@
     "type": "jargon",
     "pattern": "\\bincentiviz(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"incentivize\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "encourage, provide incentive"
   },
   {
@@ -236,7 +236,7 @@
     "type": "jargon",
     "pattern": "\\bimpact(s|ed|ing) \\b",
     "flags": "gi",
-    "message": "Avoid \"impact\" as a verb — use \"affect\" instead.",
+    "message": "Vague verb — \"affect\" is almost always the better choice.",
     "suggestion": "affect"
   },
   {
@@ -244,7 +244,7 @@
     "type": "jargon",
     "pattern": "\\bimpactful\\b",
     "flags": "gi",
-    "message": "Avoid \"impactful\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "effective"
   },
   {
@@ -252,7 +252,7 @@
     "type": "jargon",
     "pattern": "\\binnovat(e|es|ed|ing|ion|ions|ive)\\b",
     "flags": "gi",
-    "message": "Consider whether \"innovate\" is the best word here.",
+    "message": "Vague verb — be specific about what's actually new.",
     "suggestion": "introduce, invent, pioneer"
   },
   {
@@ -260,7 +260,7 @@
     "type": "jargon",
     "pattern": "\\blevel[- ]set(s|ting)?\\b",
     "flags": "gi",
-    "message": "Avoid \"level set\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "agree"
   },
   {
@@ -268,7 +268,7 @@
     "type": "jargon",
     "pattern": "\\bleverag(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"leverage\" as a verb — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "use, using"
   },
   {
@@ -276,7 +276,7 @@
     "type": "jargon",
     "pattern": "\\blow[- ]hanging fruit\\b",
     "flags": "gi",
-    "message": "Avoid \"low-hanging fruit\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "best opportunity, easiest tasks"
   },
   {
@@ -284,7 +284,7 @@
     "type": "jargon",
     "pattern": "\\bmaximiz(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"maximize\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "make the most of"
   },
   {
@@ -292,7 +292,7 @@
     "type": "jargon",
     "pattern": "\\bmindshare\\b",
     "flags": "gi",
-    "message": "Avoid \"mindshare\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "awareness, attention"
   },
   {
@@ -300,7 +300,7 @@
     "type": "jargon",
     "pattern": "\\bmove the needle\\b",
     "flags": "gi",
-    "message": "Avoid \"move the needle\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "affect, make a difference, make progress"
   },
   {
@@ -308,7 +308,7 @@
     "type": "jargon",
     "pattern": "\\bthe ask\\b",
     "flags": "gi",
-    "message": "Avoid \"the ask\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "request, the question"
   },
   {
@@ -316,7 +316,7 @@
     "type": "jargon",
     "pattern": "\\bnet[- ]new\\b",
     "flags": "gi",
-    "message": "Avoid \"net new\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "new"
   },
   {
@@ -324,7 +324,7 @@
     "type": "jargon",
     "pattern": "\\bnext[- ]gen(eration)?\\b",
     "flags": "gi",
-    "message": "Avoid \"next generation\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what's actually new or improved.",
     "suggestion": "new, updated, improved"
   },
   {
@@ -332,7 +332,7 @@
     "type": "jargon",
     "pattern": "\\bon the same page\\b",
     "flags": "gi",
-    "message": "Avoid \"on the same page\" — it's a cliché.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "agree, understand, align"
   },
   {
@@ -340,7 +340,7 @@
     "type": "jargon",
     "pattern": "\\bone[- ]stop[- ]shop\\b",
     "flags": "gi",
-    "message": "Avoid \"one-stop shop\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "hub, headquarters"
   },
   {
@@ -348,7 +348,7 @@
     "type": "jargon",
     "pattern": "\\borganically?\\b",
     "flags": "gi",
-    "message": "Consider whether \"organic\" is the best word here.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "spontaneous, natural"
   },
   {
@@ -356,7 +356,7 @@
     "type": "jargon",
     "pattern": "\\bout[- ]of[- ]the[- ]box\\b",
     "flags": "gi",
-    "message": "Avoid \"out-of-the-box\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "easy to use, creative"
   },
   {
@@ -364,7 +364,7 @@
     "type": "jargon",
     "pattern": "\\bparadigm(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"paradigm\" — it's corporate jargon.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "model"
   },
   {
@@ -372,7 +372,7 @@
     "type": "jargon",
     "pattern": "\\bpath forward\\b",
     "flags": "gi",
-    "message": "Avoid \"path forward\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "direction, plan"
   },
   {
@@ -380,7 +380,7 @@
     "type": "jargon",
     "pattern": "\\bpeer[- ]to[- ]peer\\b",
     "flags": "gi",
-    "message": "Avoid \"peer-to-peer\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "conversation"
   },
   {
@@ -388,7 +388,7 @@
     "type": "jargon",
     "pattern": "\\breal[- ]time\\b",
     "flags": "gi",
-    "message": "Consider whether \"real-time\" is the best word here.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "up-to-the-minute, instant"
   },
   {
@@ -396,7 +396,7 @@
     "type": "jargon",
     "pattern": "\\brevolutionary\\b",
     "flags": "gi",
-    "message": "Avoid \"revolutionary\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what's actually new.",
     "suggestion": "exceptional, advanced, uncommon"
   },
   {
@@ -404,7 +404,7 @@
     "type": "jargon",
     "pattern": "\\bscalabl(e|ility)\\b",
     "flags": "gi",
-    "message": "Avoid \"scalable\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "growable, sustainable growth"
   },
   {
@@ -412,7 +412,7 @@
     "type": "jargon",
     "pattern": "\\bsecret sauce\\b",
     "flags": "gi",
-    "message": "Avoid \"secret sauce\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "differentiating features, unique capabilities"
   },
   {
@@ -420,7 +420,7 @@
     "type": "jargon",
     "pattern": "\\bsilo(s|ed)?\\b",
     "flags": "gi",
-    "message": "Avoid \"silos\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "departments, teams, groups"
   },
   {
@@ -428,7 +428,7 @@
     "type": "jargon",
     "pattern": "\\bsocializ(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"socialize\" when meaning to share — it's corporate jargon.",
+    "message": "Corporate-speak — \"socialize\" means to share in office-speak, but most people won't read it that way.",
     "suggestion": "share"
   },
   {
@@ -436,7 +436,7 @@
     "type": "jargon",
     "pattern": "\\bspeed to value\\b",
     "flags": "gi",
-    "message": "Avoid \"speed to value\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "fast development"
   },
   {
@@ -444,7 +444,7 @@
     "type": "jargon",
     "pattern": "\\bstreamlin(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"streamline\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "reduce unnecessary steps, simplify"
   },
   {
@@ -452,7 +452,7 @@
     "type": "jargon",
     "pattern": "\\bsupercharg(e|es|ed|ing)\\b",
     "flags": "gi",
-    "message": "Avoid \"supercharge\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what's actually improving.",
     "suggestion": "improve"
   },
   {
@@ -460,7 +460,7 @@
     "type": "jargon",
     "pattern": "\\bsynerg(y|ies|istic|istically)\\b",
     "flags": "gi",
-    "message": "Avoid \"synergy\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "common understanding, mutual benefit, teamwork"
   },
   {
@@ -468,7 +468,7 @@
     "type": "jargon",
     "pattern": "\\btrailblaz(e|es|ed|ing|er|ers)\\b",
     "flags": "gi",
-    "message": "The Salesforce style guide does not allow use of \"trailblaze\" — avoid it.",
+    "message": "Internal Salesforce term — the style guide doesn't allow it in external copy.",
     "suggestion": "innovate, invent, pioneer"
   },
   {
@@ -476,7 +476,7 @@
     "type": "jargon",
     "pattern": "\\bunleash(es|ed|ing)?\\b",
     "flags": "gi",
-    "message": "Avoid \"unleash\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "take advantage of"
   },
   {
@@ -484,7 +484,7 @@
     "type": "jargon",
     "pattern": "\\bunlock(s|ed|ing)?\\b",
     "flags": "gi",
-    "message": "Avoid \"unlock\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "take advantage of"
   },
   {
@@ -492,7 +492,7 @@
     "type": "jargon",
     "pattern": "\\buplevel(s|ed|ing)?\\b",
     "flags": "gi",
-    "message": "Avoid \"uplevel\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "raise, increase"
   },
   {
@@ -500,7 +500,7 @@
     "type": "jargon",
     "pattern": "\\butiliz(e|es|ed|ing|ation)\\b",
     "flags": "gi",
-    "message": "Avoid \"utilize\" — prefer \"use.\"",
+    "message": "Unnecessarily fancy — \"use\" works just as well (or better).",
     "suggestion": "use, employ"
   },
   {
@@ -508,7 +508,7 @@
     "type": "jargon",
     "pattern": "\\bvalue[- ]add(s|ed|ing)?\\b",
     "flags": "gi",
-    "message": "Avoid \"value add\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "improve, enhance"
   },
   {
@@ -516,7 +516,7 @@
     "type": "jargon",
     "pattern": "\\bvalue proposition(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"value proposition\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "benefit"
   },
   {
@@ -524,7 +524,7 @@
     "type": "jargon",
     "pattern": "\\bvalue stream(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"value stream\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "steps to add value"
   },
   {
@@ -532,7 +532,7 @@
     "type": "jargon",
     "pattern": "\\bvisioning\\b",
     "flags": "gi",
-    "message": "Avoid \"visioning\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "imagining, planning"
   },
   {
@@ -540,7 +540,7 @@
     "type": "jargon",
     "pattern": "\\bviral\\b",
     "flags": "gi",
-    "message": "Consider whether \"viral\" is the best word here.",
+    "message": "Hype language — be specific about what you mean.",
     "suggestion": "popular"
   },
   {
@@ -548,7 +548,7 @@
     "type": "jargon",
     "pattern": "\\bwheelhouse\\b",
     "flags": "gi",
-    "message": "Avoid \"wheelhouse\" — it's corporate jargon.",
+    "message": "Corporate-speak — say what you actually mean in plain language.",
     "suggestion": "area of expertise, specialty"
   },
   {
@@ -556,7 +556,7 @@
     "type": "jargon",
     "pattern": "\\bworld[- ]class\\b",
     "flags": "gi",
-    "message": "Avoid \"world class\" — it's corporate jargon.",
+    "message": "Hype language — be specific about what makes it great.",
     "suggestion": "best, outstanding"
   },
   {
@@ -564,7 +564,7 @@
     "type": "jargon",
     "pattern": "\\bcutting[- ]edge\\b",
     "flags": "gi",
-    "message": "Avoid \"cutting edge\" — it's a cliché.",
+    "message": "Hype language — be specific about what's actually advanced.",
     "suggestion": "advanced, leading"
   },
   {
@@ -572,7 +572,7 @@
     "type": "jargon",
     "pattern": "\\brobust\\b",
     "flags": "gi",
-    "message": "Avoid \"robust\" — it's a cliché in tech marketing.",
+    "message": "Hype language — overused in tech marketing. Be specific.",
     "suggestion": "strong, thorough, comprehensive"
   },
   {
@@ -580,7 +580,7 @@
     "type": "jargon",
     "pattern": "\\bstate[- ]of[- ]the[- ]art\\b",
     "flags": "gi",
-    "message": "Avoid \"state-of-the-art\" — it's a cliché.",
+    "message": "Hype language — be specific about what's actually modern or advanced.",
     "suggestion": "modern, advanced, latest"
   },
   {
@@ -588,7 +588,7 @@
     "type": "jargon",
     "pattern": "\\buser[- ]friendly\\b",
     "flags": "gi",
-    "message": "Avoid \"user-friendly\" — it's a cliché.",
+    "message": "Unnecessarily fancy — a simpler word will land better.",
     "suggestion": "easy to use, intuitive"
   },
   {
@@ -596,7 +596,7 @@
     "type": "jargon",
     "pattern": "\\btotal solution\\b",
     "flags": "gi",
-    "message": "Avoid \"total solution\" — it's a cliché.",
+    "message": "Hype language — be specific about what's included.",
     "suggestion": "complete, comprehensive"
   },
   {
@@ -604,7 +604,7 @@
     "type": "jargon",
     "pattern": "\\bpowerful feature(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"powerful feature\" — it's a cliché.",
+    "message": "Hype language — \"powerful\" is vague. Describe what the feature actually does.",
     "suggestion": "Be specific about what the feature does"
   },
   {
@@ -612,7 +612,7 @@
     "type": "jargon",
     "pattern": "\\bend[- ]of[- ]life\\b",
     "flags": "gi",
-    "message": "Avoid \"end-of-life\" — use \"feature retirement\" or \"retire.\"",
+    "message": "Internal shorthand — readers outside the company may not understand this.",
     "suggestion": "feature retirement, retire"
   },
   {
@@ -620,7 +620,7 @@
     "type": "jargon",
     "pattern": "\\boutage(s)?\\b",
     "flags": "gi",
-    "message": "Avoid \"outage\" — use \"service disruption.\"",
+    "message": "Internal shorthand — \"service disruption\" is clearer for external audiences.",
     "suggestion": "service disruption"
   },
   {
@@ -2076,7 +2076,7 @@
     "type": "jargon",
     "pattern": "\\bseamless(ly)?\\b",
     "flags": "gi",
-    "message": "Avoid \"seamless\" — it's overused and vague.",
+    "message": "Hype language — overused and vague. Be specific about why it's smooth or easy.",
     "suggestion": "smooth, easy, simple, effortless"
   },
   {
@@ -2084,7 +2084,7 @@
     "type": "jargon",
     "pattern": "\\bscal(e|es|ed|ing|able|ability)\\b",
     "flags": "gi",
-    "message": "Avoid \"scale\" — it's corporate jargon.",
+    "message": "Vague verb — there's almost always a simpler, more specific word.",
     "suggestion": "grow, expand, support more"
   },
   {
@@ -2638,5 +2638,413 @@
     "flags": "gi",
     "message": "Use \"workaround\" — one word, no hyphen.",
     "suggestion": "workaround"
+  },
+  {
+    "id": "ai-delve",
+    "type": "ai",
+    "pattern": "\\bdelv(e|es|ed|ing)( into)?\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "explore, dig into, look at"
+  },
+  {
+    "id": "ai-underscore",
+    "type": "ai",
+    "pattern": "\\bunderscore(s|d)?\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "highlight, show, emphasize"
+  },
+  {
+    "id": "ai-pivotal",
+    "type": "ai",
+    "pattern": "\\bpivotal\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "important, key, critical"
+  },
+  {
+    "id": "ai-realm",
+    "type": "ai",
+    "pattern": "\\brealm(s)?\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "area, field, space"
+  },
+  {
+    "id": "ai-illuminate",
+    "type": "ai",
+    "pattern": "\\billuminat(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "explain, clarify, show"
+  },
+  {
+    "id": "ai-moreover",
+    "type": "ai",
+    "pattern": "\\bmoreover\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "also, plus, and"
+  },
+  {
+    "id": "ai-furthermore",
+    "type": "ai",
+    "pattern": "\\bfurthermore\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "also, and, plus"
+  },
+  {
+    "id": "ai-consequently",
+    "type": "ai",
+    "pattern": "\\bconsequently\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "so, as a result, because of this"
+  },
+  {
+    "id": "ai-notably",
+    "type": "ai",
+    "pattern": "\\bnotably\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "especially, in particular"
+  },
+  {
+    "id": "ai-essentially",
+    "type": "ai",
+    "pattern": "\\bessentially\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "basically, in short, (or cut entirely)"
+  },
+  {
+    "id": "ai-fundamentally",
+    "type": "ai",
+    "pattern": "\\bfundamentally\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "at its core, basically, (or cut entirely)"
+  },
+  {
+    "id": "ai-groundbreaking",
+    "type": "ai",
+    "pattern": "\\bgroundbreaking\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "new, first-of-its-kind, (or cut entirely)"
+  },
+  {
+    "id": "ai-multifaceted",
+    "type": "ai",
+    "pattern": "\\bmultifaceted\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "complex, varied, layered"
+  },
+  {
+    "id": "ai-nuanced",
+    "type": "ai",
+    "pattern": "\\bnuanced\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "subtle, detailed, specific"
+  },
+  {
+    "id": "ai-navigate",
+    "type": "ai",
+    "pattern": "\\bnavigate(s|d)?\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "work through, manage, handle"
+  },
+  {
+    "id": "ai-landscape",
+    "type": "ai",
+    "pattern": "\\blandscape(s)?\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "space, world, field, market"
+  },
+  {
+    "id": "ai-foster",
+    "type": "ai",
+    "pattern": "\\bfoster(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "It's a high-frequency AI word — sounds smart but feels generic.",
+    "suggestion": "encourage, build, support"
+  },
+  {
+    "id": "ai-that-being-said",
+    "type": "ai",
+    "pattern": "\\bthat being said\\b",
+    "flags": "gi",
+    "message": "Common AI transition — often needlessly wordy.",
+    "suggestion": "however, even so, but"
+  },
+  {
+    "id": "ai-at-its-core",
+    "type": "ai",
+    "pattern": "\\bat its core\\b",
+    "flags": "gi",
+    "message": "Common AI transition — often needlessly wordy.",
+    "suggestion": "fundamentally, basically"
+  },
+  {
+    "id": "ai-to-put-it-simply",
+    "type": "ai",
+    "pattern": "\\bto put it simply\\b",
+    "flags": "gi",
+    "message": "Common AI transition — often needlessly wordy.",
+    "suggestion": "simply put, in short"
+  },
+  {
+    "id": "ai-underscores-importance",
+    "type": "ai",
+    "pattern": "\\bunderscore(s)? the importance of\\b",
+    "flags": "gi",
+    "message": "Common AI transition — often needlessly wordy.",
+    "suggestion": "highlights the need for, reinforces the value of"
+  },
+  {
+    "id": "ai-key-takeaway",
+    "type": "ai",
+    "pattern": "\\b(a )?key takeaway (is|here)\\b",
+    "flags": "gi",
+    "message": "Common AI transition — often needlessly wordy.",
+    "suggestion": "the main point is, one important lesson is"
+  },
+  {
+    "id": "ai-broader-perspective",
+    "type": "ai",
+    "pattern": "\\bfrom a broader perspective\\b",
+    "flags": "gi",
+    "message": "Common AI transition — often needlessly wordy.",
+    "suggestion": "when you zoom out, on a larger scale"
+  },
+  {
+    "id": "ai-generally-speaking",
+    "type": "ai",
+    "pattern": "\\bgenerally speaking\\b",
+    "flags": "gi",
+    "message": "AI hedging phrase — can make writing sound hesitant.",
+    "suggestion": "in most cases, as a rule"
+  },
+  {
+    "id": "ai-arguably",
+    "type": "ai",
+    "pattern": "\\barguably\\b",
+    "flags": "gi",
+    "message": "AI hedging phrase — can make writing sound hesitant.",
+    "suggestion": "some may say, (or make a direct claim)"
+  },
+  {
+    "id": "ai-to-some-extent",
+    "type": "ai",
+    "pattern": "\\bto some extent\\b",
+    "flags": "gi",
+    "message": "AI hedging phrase — can make writing sound hesitant.",
+    "suggestion": "partially, to a degree, (or be specific)"
+  },
+  {
+    "id": "ai-broadly-speaking",
+    "type": "ai",
+    "pattern": "\\bbroadly speaking\\b",
+    "flags": "gi",
+    "message": "AI hedging phrase — can make writing sound hesitant.",
+    "suggestion": "overall, in general"
+  },
+  {
+    "id": "ai-shed-light",
+    "type": "ai",
+    "pattern": "\\bshed(s|ding)? light on\\b",
+    "flags": "gi",
+    "message": "Academic AI word — can sound overly formal or impersonal.",
+    "suggestion": "explain, clarify, reveal"
+  },
+  {
+    "id": "ai-facilitate",
+    "type": "ai",
+    "pattern": "\\bfacilitat(e|es|ed|ing|ion)\\b",
+    "flags": "gi",
+    "message": "Academic AI word — can sound overly formal or impersonal.",
+    "suggestion": "help, make easier, support"
+  },
+  {
+    "id": "ai-refine",
+    "type": "ai",
+    "pattern": "\\brefin(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Academic AI word — can sound overly formal or impersonal.",
+    "suggestion": "improve, tweak, adjust"
+  },
+  {
+    "id": "ai-bolster",
+    "type": "ai",
+    "pattern": "\\bbolster(s|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "Academic AI word — can sound overly formal or impersonal.",
+    "suggestion": "support, strengthen, reinforce"
+  },
+  {
+    "id": "ai-differentiate",
+    "type": "ai",
+    "pattern": "\\bdifferentiat(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Academic AI word — can sound overly formal or impersonal.",
+    "suggestion": "distinguish, tell apart, set apart"
+  },
+  {
+    "id": "ai-revolutionize",
+    "type": "ai",
+    "pattern": "\\brevolutioniz(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "Overused AI buzzword — risks sounding exaggerated or losing meaning.",
+    "suggestion": "transform, change significantly"
+  },
+  {
+    "id": "ai-innovative",
+    "type": "ai",
+    "pattern": "\\binnovative\\b",
+    "flags": "gi",
+    "message": "Overused AI buzzword — risks sounding exaggerated or losing meaning.",
+    "suggestion": "new, creative, (or cut entirely)"
+  },
+  {
+    "id": "ai-game-changing",
+    "type": "ai",
+    "pattern": "\\bgame[- ]chang(ing|er|ers)\\b",
+    "flags": "gi",
+    "message": "Overused AI buzzword — risks sounding exaggerated or losing meaning.",
+    "suggestion": "significant, major, (or cut entirely)"
+  },
+  {
+    "id": "ai-transformative",
+    "type": "ai",
+    "pattern": "\\btransformative\\b",
+    "flags": "gi",
+    "message": "Overused AI buzzword — risks sounding exaggerated or losing meaning.",
+    "suggestion": "impactful, dramatically changed"
+  },
+  {
+    "id": "ai-seamless-integration",
+    "type": "ai",
+    "pattern": "\\bseamless(ly)? integrat(ion|ed|ing|e|es)\\b",
+    "flags": "gi",
+    "message": "Overused AI buzzword — risks sounding exaggerated or losing meaning.",
+    "suggestion": "smooth compatibility, works effortlessly with"
+  },
+  {
+    "id": "ai-scalable-solution",
+    "type": "ai",
+    "pattern": "\\bscalable solution(s)?\\b",
+    "flags": "gi",
+    "message": "Overused AI buzzword — risks sounding exaggerated or losing meaning.",
+    "suggestion": "expandable system, easily adjustable"
+  },
+  {
+    "id": "ai-in-todays-world",
+    "type": "ai",
+    "pattern": "\\bin today'?s (world|landscape|environment|age|era)\\b",
+    "flags": "gi",
+    "message": "Formulaic AI opener — reads as filler rather than substance.",
+    "suggestion": "(cut entirely or be specific about what's changed)"
+  },
+  {
+    "id": "ai-in-an-era",
+    "type": "ai",
+    "pattern": "\\bin an era of\\b",
+    "flags": "gi",
+    "message": "Formulaic AI opener — reads as filler rather than substance.",
+    "suggestion": "(cut entirely or be specific)"
+  },
+  {
+    "id": "ai-when-it-comes-to",
+    "type": "ai",
+    "pattern": "\\bwhen it comes to\\b",
+    "flags": "gi",
+    "message": "Formulaic AI opener — reads as filler rather than substance.",
+    "suggestion": "for, with, (or restructure the sentence)"
+  },
+  {
+    "id": "ai-important-to-note",
+    "type": "ai",
+    "pattern": "\\bit'?s (important|worth) to note\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "(cut and state the point directly)"
+  },
+  {
+    "id": "ai-worth-noting",
+    "type": "ai",
+    "pattern": "\\b(it'?s )?worth noting\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "(cut and state the point directly)"
+  },
+  {
+    "id": "ai-this-helps-ensure",
+    "type": "ai",
+    "pattern": "\\bthis (helps )?ensure(s)? that\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "(restructure to state the outcome directly)"
+  },
+  {
+    "id": "ai-this-allows-you",
+    "type": "ai",
+    "pattern": "\\bthis allows you to\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "you can, now you can"
+  },
+  {
+    "id": "ai-whether-youre-or",
+    "type": "ai",
+    "pattern": "\\bwhether you'?re .{5,60} or\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "(pick the most relevant audience and speak to them directly)"
+  },
+  {
+    "id": "ai-not-only-but-also",
+    "type": "ai",
+    "pattern": "\\bnot only\\b.{3,60}\\bbut also\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "(simplify into one direct statement)"
+  },
+  {
+    "id": "ai-serves-as-a",
+    "type": "ai",
+    "pattern": "\\bserves as a\\b",
+    "flags": "gi",
+    "message": "AI filler phrase — just say the thing directly.",
+    "suggestion": "is, acts as, works as"
+  },
+  {
+    "id": "ai-truly",
+    "type": "ai",
+    "pattern": "\\btruly\\b",
+    "flags": "gi",
+    "message": "AI intensifier — usually filler that can be cut.",
+    "suggestion": "(cut entirely or be specific)"
+  },
+  {
+    "id": "ai-deeply",
+    "type": "ai",
+    "pattern": "\\bdeeply\\b",
+    "flags": "gi",
+    "message": "AI intensifier — usually filler that can be cut.",
+    "suggestion": "(cut entirely or be specific)"
+  },
+  {
+    "id": "ai-incredibly",
+    "type": "ai",
+    "pattern": "\\bincredibly\\b",
+    "flags": "gi",
+    "message": "AI intensifier — usually filler that can be cut.",
+    "suggestion": "very, extremely, (or cut entirely)"
   }
 ]

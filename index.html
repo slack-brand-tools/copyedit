@@ -7,16 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Loading Toast -->
+  <div class="loading-toast" id="loadingToast">
+    <span class="loading-toast-msg" id="loadingMsg"></span>
+  </div>
+
   <header>
     <div class="header-row">
-      <h1>/slack-copyedit 🔍</h1>
+      <h1>/slack-copyedit</h1>
       <div class="feedback-wrapper">
         <span class="whats-this"><button class="feedback-btn" onclick="openFeedback()">Leave feedback 👋</button>
           <span class="whats-this-tooltip">Spotted a mistake? Got an addition for our jargon glossary? Your feedback will be routed directly to a private Slack channel.</span>
         </span>
       </div>
     </div>
-    <p class="subtitle">Get rid of jargon and check your copy against Slack and Salesforce editorial guidelines.</p>
+    <p class="subtitle">A simpler, more pleasant way to check your copy against Slack and Salesforce editorial guidelines.</p>
   </header>
 
   <!-- Feedback Modal -->
@@ -145,12 +150,8 @@
         <div class="glossary-item"><span class="glossary-term">wheelhouse</span><span class="glossary-suggestion">&rarr; area of expertise, specialty</span></div>
         <div class="glossary-item"><span class="glossary-term">world class</span><span class="glossary-suggestion">&rarr; best, outstanding</span></div>
       </div>
+      <a href="#" class="glossary-suggest-link" onclick="closeGlossary(); openFeedback(); return false;">Suggest a new word!</a>
     </div>
-  </div>
-
-  <!-- Loading Toast -->
-  <div class="loading-toast" id="loadingToast">
-    <span class="loading-toast-msg" id="loadingMsg"></span>
   </div>
 
   <main>
@@ -161,7 +162,7 @@
         <button class="mode-tab" data-mode="web">Web</button>
         <button class="mode-tab" data-mode="social">Social</button>
       </div>
-      <a href="#" class="glossary-link" onclick="openGlossary(); return false;">Jargon Glossary</a>
+      <a href="#" class="glossary-link" onclick="openGlossary(); return false;">Jargon Glossary 🆕</a>
     </div>
 
     <!-- General Mode -->
@@ -194,21 +195,14 @@
         </div>
         <div class="field-group">
           <div class="field-header">
-            <label for="web-meta">Meta description</label>
-            <span class="field-counter" data-min="145" data-max="160"><span class="field-count">0</span> / 145–160</span>
-          </div>
-          <textarea id="web-meta" class="field-input" data-min="145" data-max="160" rows="2" placeholder="Meta description..."></textarea>
-        </div>
-        <div class="field-group">
-          <div class="field-header">
             <label for="web-eyebrow">Eyebrow</label>
             <span class="field-counter" data-max="15"><span class="field-count">0</span> / 15</span>
           </div>
-          <input type="text" id="web-eyebrow" class="field-input" data-max="15" placeholder="Eyebrow text (optional)...">
+          <input type="text" id="web-eyebrow" class="field-input" data-max="15" placeholder="Eyebrow text...">
         </div>
         <div class="field-group">
           <div class="field-header">
-            <label for="web-headline">H1 / Headline</label>
+            <label for="web-headline">Headline</label>
             <span class="field-counter" data-max="50"><span class="field-count">0</span> / 50</span>
           </div>
           <input type="text" id="web-headline" class="field-input" data-max="50" placeholder="Headline...">
@@ -224,6 +218,11 @@
       <div class="editor-actions">
         <button class="btn-primary check-structured-btn" data-mode="web">Check copy</button>
         <button class="btn-secondary clear-structured-btn" data-mode="web">Clear</button>
+        <label class="toggle-label">
+          <input type="checkbox" class="live-check-structured" data-mode="web">
+          <span class="toggle-switch"></span>
+          Check as you type
+        </label>
       </div>
     </section>
 
@@ -446,6 +445,11 @@
       <div class="editor-actions">
         <button class="btn-primary check-structured-btn" data-mode="social">Check copy</button>
         <button class="btn-secondary clear-structured-btn" data-mode="social">Clear</button>
+        <label class="toggle-label">
+          <input type="checkbox" class="live-check-structured" data-mode="social">
+          <span class="toggle-switch"></span>
+          Check as you type
+        </label>
       </div>
     </section>
 
@@ -456,6 +460,7 @@
         <div class="legend">
           <span class="legend-item"><span class="legend-swatch legend-editorial"></span> Editorial</span>
           <span class="legend-item"><span class="legend-swatch legend-jargon"></span> Jargon</span>
+          <span class="legend-item"><span class="legend-swatch legend-ai"></span> AI</span>
         </div>
       </div>
 
@@ -529,13 +534,15 @@
             </ul>
           </div>
           <div class="quick-ref-card">
-            <h3>Style hierarchy</h3>
+            <h3>Is that you, AI?</h3>
             <ul>
-              <li><strong>1.</strong> Salesforce style guide</li>
-              <li><strong>2.</strong> AP Style</li>
-              <li><strong>3.</strong> Merriam-Webster</li>
+              <li>Avoid "delve," "navigate," "landscape," "foster," "moreover," "furthermore"</li>
+              <li>Skip "it's important to note" and "in today's world"</li>
+              <li>Don't open with "In an era of..." or "When it comes to..."</li>
+              <li>Cut filler: "This helps ensure that..." &rarr; just say what it does</li>
+              <li>Drop the triple: AI loves lists of three adjectives ("simple, intuitive, and powerful")</li>
+              <li>If every paragraph starts with a topic sentence, mix it up</li>
             </ul>
-            <p class="quick-ref-note">Salesforce overrides AP; AP fills gaps; M-W is the default for spelling.</p>
           </div>
         </div>
       </div>

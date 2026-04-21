@@ -10,6 +10,8 @@
   --highlight-editorial-hover: #7fc4de;
   --highlight-jargon: #FFD580;
   --highlight-jargon-hover: #f5bf4f;
+  --highlight-ai: #D8B4FE;
+  --highlight-ai-hover: #c084fc;
   --bg: #fafafa;
   --surface: #ffffff;
   --text: #1a1a1a;
@@ -35,7 +37,7 @@ body {
 
 /* === Header === */
 header {
-  padding: 32px 24px 16px;
+  padding: 56px 24px 16px;
   max-width: 960px;
   margin: 0 auto;
   width: 100%;
@@ -356,6 +358,10 @@ button {
   background: var(--highlight-jargon);
 }
 
+.legend-ai {
+  background: var(--highlight-ai);
+}
+
 /* === Highlighted Output === */
 .output-area {
   padding: 14px;
@@ -411,6 +417,19 @@ mark.highlight-jargon.active {
   background: var(--highlight-jargon-hover);
 }
 
+mark.highlight-ai {
+  background: var(--highlight-ai);
+  border-radius: 3px;
+  padding: 1px 2px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+mark.highlight-ai:hover,
+mark.highlight-ai.active {
+  background: var(--highlight-ai-hover);
+}
+
 /* === Issue Panel === */
 .issue-panel {
   display: flex;
@@ -449,6 +468,10 @@ mark.highlight-jargon.active {
 
 .issue-badge.jargon {
   background: var(--highlight-jargon);
+}
+
+.issue-badge.ai {
+  background: var(--highlight-ai);
 }
 
 .issue-badge.charlimit {
@@ -884,12 +907,26 @@ mark.highlight-jargon.active {
 
 .glossary-term {
   font-weight: 600;
-  color: var(--text);
+  color: var(--danger);
 }
 
 .glossary-suggestion {
-  color: var(--text-muted);
+  color: var(--ok);
   text-align: right;
+}
+
+.glossary-suggest-link {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.glossary-suggest-link:hover {
+  text-decoration: underline;
 }
 
 /* === Footer === */
@@ -923,7 +960,7 @@ footer .whats-this-tooltip {
 /* === Loading Toast === */
 .loading-toast {
   position: fixed;
-  bottom: 80px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--accent);

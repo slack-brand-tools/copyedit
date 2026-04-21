@@ -117,7 +117,7 @@ function submitFeedback() {
 
   async function loadRules() {
     try {
-      const res = await fetch("rules.json");
+      const res = await fetch("rules.json?v=" + Date.now());
       rules = await res.json();
       compiledRules = rules.map(function (rule) {
         return {
@@ -203,7 +203,7 @@ function submitFeedback() {
         html += escapeHtml(text.slice(cursor, match.start));
       }
 
-      var cls = match.type === "jargon" ? "highlight-jargon" : "highlight-editorial";
+      var cls = match.type === "jargon" ? "highlight-jargon" : match.type === "ai" ? "highlight-ai" : "highlight-editorial";
       html +=
         '<mark class="' + cls + '" data-issue-index="' + idx + '">' +
         escapeHtml(text.slice(match.start, match.end)) +
@@ -234,7 +234,7 @@ function submitFeedback() {
         if (match.start > cursor) {
           html += escapeHtml(field.text.slice(cursor, match.start));
         }
-        var cls = match.type === "jargon" ? "highlight-jargon" : "highlight-editorial";
+        var cls = match.type === "jargon" ? "highlight-jargon" : match.type === "ai" ? "highlight-ai" : "highlight-editorial";
         html +=
           '<mark class="' + cls + '" data-issue-index="' + globalIdx + '">' +
           escapeHtml(field.text.slice(match.start, match.end)) +
@@ -324,7 +324,11 @@ function submitFeedback() {
 
       var message = document.createElement("div");
       message.className = "issue-message";
-      message.textContent = match.message;
+      if (match.type === "ai") {
+        message.textContent = '"' + match.matched.charAt(0).toUpperCase() + match.matched.slice(1) + '" can sometimes be an AI tell. ' + match.message + ' Double-check before using.';
+      } else {
+        message.textContent = match.message;
+      }
 
       var suggestion = document.createElement("div");
       suggestion.className = "issue-suggestion";
@@ -430,15 +434,31 @@ function submitFeedback() {
     }
   }
 
+  let liveCheckStructured = { web: false, social: false };
+  let liveCheckStructuredTimer = null;
+
+  function scheduleStructuredLiveCheck(mode) {
+    if (!liveCheckStructured[mode]) return;
+    if (liveCheckStructuredTimer) clearTimeout(liveCheckStructuredTimer);
+    liveCheckStructuredTimer = setTimeout(function () {
+      runStructuredCheck(mode);
+    }, 400);
+  }
+
   function initFieldCounters() {
     var inputs = document.querySelectorAll(".field-input");
     inputs.forEach(function (input) {
       input.addEventListener("input", function () {
         updateFieldCounter(input);
+        var panel = input.closest(".mode-panel");
+        if (panel) {
+          var mode = panel.id.replace("mode-", "");
+          scheduleStructuredLiveCheck(mode);
+        }
       });
 
       input.addEventListener("keydown", function (e) {
-        if ((e.metaKey || e.ctrlKey) && e.key === "Enter") {
+        if (e.key === "Enter" && !e.shiftKey) {
           e.preventDefault();
           var mode = input.closest(".mode-panel").id.replace("mode-", "");
           runStructuredCheck(mode);
@@ -541,10 +561,12 @@ function submitFeedback() {
 
     var jargonCount = allMatches.filter(function (m) { return m.type === "jargon"; }).length;
     var editorialCount = allMatches.filter(function (m) { return m.type === "editorial"; }).length;
+    var aiCount = allMatches.filter(function (m) { return m.type === "ai"; }).length;
 
     var parts = [];
     if (editorialCount > 0) parts.push(editorialCount + " editorial");
     if (jargonCount > 0) parts.push(jargonCount + " jargon");
+    if (aiCount > 0) parts.push(aiCount + " AI");
     if (charIssues.length > 0) parts.push(charIssues.length + " character limit");
     resultsTitle.textContent = total + " issue" + (total !== 1 ? "s" : "") + " found (" + parts.join(", ") + ")";
 
@@ -608,10 +630,12 @@ function submitFeedback() {
 
     var jargonCount = matches.filter(function (m) { return m.type === "jargon"; }).length;
     var editorialCount = matches.filter(function (m) { return m.type === "editorial"; }).length;
+    var aiCount = matches.filter(function (m) { return m.type === "ai"; }).length;
 
     var parts = [];
     if (editorialCount > 0) parts.push(editorialCount + " editorial");
     if (jargonCount > 0) parts.push(jargonCount + " jargon");
+    if (aiCount > 0) parts.push(aiCount + " AI");
     resultsTitle.textContent = matches.length + " issue" + (matches.length !== 1 ? "s" : "") + " found (" + parts.join(", ") + ")";
 
     renderHighlights(text, matches);
@@ -674,6 +698,17 @@ function submitFeedback() {
     if (liveCheckEnabled && inputArea.value.trim()) {
       runGeneralCheck();
     }
+  });
+
+  // Structured live check toggles
+  document.querySelectorAll(".live-check-structured").forEach(function (toggle) {
+    toggle.addEventListener("change", function () {
+      var mode = toggle.getAttribute("data-mode");
+      liveCheckStructured[mode] = toggle.checked;
+      if (toggle.checked) {
+        runStructuredCheck(mode);
+      }
+    });
   });
 
   // Mode tabs
