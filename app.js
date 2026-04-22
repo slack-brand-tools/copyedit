@@ -179,6 +179,133 @@ function submitFeedback() {
     return result;
   }
 
+  // ── Headline Rule Checks (field-aware) ──────────────────────
+
+  function looksLikeTitleCase(text) {
+    var words = text.split(/\s+/);
+    if (words.length < 3) return false;
+
+    var capitalizedNonFirst = 0;
+    for (var i = 1; i < words.length; i++) {
+      var word = words[i];
+      // Skip all-caps (acronyms like AI, CRM, API)
+      if (word === word.toUpperCase()) continue;
+      // Skip words with non-alpha chars (URLs, product names)
+      if (/[^a-zA-Z''-]/.test(word)) continue;
+      // Count words that start uppercase followed by lowercase
+      if (/^[A-Z][a-z]/.test(word)) {
+        capitalizedNonFirst++;
+      }
+    }
+
+    // 2+ title-cased non-first words = likely title case
+    return capitalizedNonFirst >= 2;
+  }
+
+  function checkHeadlineRules(fields) {
+    var issues = [];
+
+    // Identify headline, subhead, and eyebrow fields by label
+    var headlineFields = [];
+    var subheadField = null;
+    var eyebrowField = null;
+
+    fields.forEach(function (field) {
+      var label = field.label.toLowerCase();
+      if (label.includes("subhead")) {
+        subheadField = field;
+      } else if (label.includes("eyebrow")) {
+        eyebrowField = field;
+      } else if (label.includes("headline")) {
+        headlineFields.push(field);
+      }
+    });
+
+    var hasSubhead = subheadField && subheadField.text.trim().length > 0;
+
+    headlineFields.forEach(function (field) {
+      var text = field.text.trim();
+      if (!text) return;
+
+      var endsWithPeriod = text.endsWith(".");
+      // Multi-sentence: sentence-ending punctuation followed by space and more text
+      var isMultiSentence = /[.!?]\s+\S/.test(text);
+      var hasInternalPunctuation = /[,;:—–\-]/.test(text);
+
+      // Sentence case check (one flag per field)
+      if (looksLikeTitleCase(text)) {
+        issues.push({
+          field: field.label,
+          type: "headline",
+          message: "Use sentence case for headlines — capitalize only the first word, proper nouns, and product names."
+        });
+      }
+
+      if (isMultiSentence) {
+        // Rule 2: multi-sentence headlines need punctuation after each sentence
+        var lastChar = text.charAt(text.length - 1);
+        if (lastChar !== "." && lastChar !== "!" && lastChar !== "?") {
+          issues.push({
+            field: field.label,
+            type: "headline",
+            message: "Multi-sentence headlines need punctuation after each sentence, including the last."
+          });
+        }
+      } else {
+        // Single sentence or fragment
+        if (endsWithPeriod && hasSubhead) {
+          // Rule 4: headline with subhead — headline doesn't get a period
+          issues.push({
+            field: field.label,
+            type: "headline",
+            message: "Headlines paired with a subhead don't need a period — the subhead carries the punctuation."
+          });
+        } else if (endsWithPeriod && hasInternalPunctuation) {
+          // Rule 3: headline with comma/other punctuation — no period
+          issues.push({
+            field: field.label,
+            type: "headline",
+            message: "Headlines with internal punctuation (commas, dashes, etc.) don't need a trailing period."
+          });
+        } else if (endsWithPeriod) {
+          // Rule 1: single sentence/fragment — no period
+          issues.push({
+            field: field.label,
+            type: "headline",
+            message: "Single-sentence headlines don't need a period."
+          });
+        }
+      }
+    });
+
+    // Rule 4: subhead should end with a period
+    if (subheadField && subheadField.text.trim()) {
+      var subText = subheadField.text.trim();
+      var subLastChar = subText.charAt(subText.length - 1);
+      if (subLastChar !== "." && subLastChar !== "!" && subLastChar !== "?") {
+        issues.push({
+          field: "Subhead",
+          type: "headline",
+          message: "Subheads should end with a period."
+        });
+      }
+    }
+
+    // Eyebrow: no end punctuation
+    if (eyebrowField && eyebrowField.text.trim()) {
+      var eyeText = eyebrowField.text.trim();
+      if (/[.!]$/.test(eyeText)) {
+        issues.push({
+          field: "Eyebrow",
+          type: "headline",
+          message: "Eyebrows don't use end punctuation."
+        });
+      }
+    }
+
+    return issues;
+  }
+
   // ── Renderer: Highlighted Output ─────────────────────────────
 
   function escapeHtml(str) {
@@ -380,7 +507,7 @@ function submitFeedback() {
         card.className = "issue-card";
 
         var badge = document.createElement("div");
-        badge.className = "issue-badge charlimit";
+        badge.className = "issue-badge " + (issue.type === "headline" ? "editorial" : "charlimit");
 
         var body = document.createElement("div");
         body.className = "issue-body";
@@ -528,6 +655,7 @@ function submitFeedback() {
     var data = getStructuredFields(mode);
     var fields = data.fields;
     var charIssues = data.charIssues;
+    var headlineIssues = checkHeadlineRules(fields);
 
     // Find the check button for this mode
     var btn = document.querySelector('.check-structured-btn[data-mode="' + mode + '"]');
@@ -546,7 +674,8 @@ function submitFeedback() {
       });
     });
 
-    var total = allMatches.length + charIssues.length;
+    var allFieldIssues = charIssues.concat(headlineIssues);
+    var total = allMatches.length + allFieldIssues.length;
 
     if (btn) updateBadge(btn, total);
 
@@ -568,10 +697,11 @@ function submitFeedback() {
     if (jargonCount > 0) parts.push(jargonCount + " jargon");
     if (aiCount > 0) parts.push(aiCount + " AI");
     if (charIssues.length > 0) parts.push(charIssues.length + " character limit");
+    if (headlineIssues.length > 0) parts.push(headlineIssues.length + " headline");
     resultsTitle.textContent = total + " issue" + (total !== 1 ? "s" : "") + " found (" + parts.join(", ") + ")";
 
     renderStructuredHighlights(fields, allMatches);
-    renderIssueList(allMatches, charIssues);
+    renderIssueList(allMatches, allFieldIssues);
   }
 
   // ── Mode Switching ───────────────────────────────────────────
