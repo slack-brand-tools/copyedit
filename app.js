@@ -634,9 +634,13 @@ function submitFeedback() {
         fields.push({ label: label, text: text, matches: matches });
 
         if (max > 0 && text.length > max) {
+          var overMsg = "Over limit: " + text.length + " / " + max + " characters (" + (text.length - max) + " over).";
+          if (text.length > max * 1.2) {
+            overMsg += " Consider shortening.";
+          }
           charIssues.push({
             field: label,
-            message: "Over limit: " + text.length + " / " + max + " characters (" + (text.length - max) + " over)."
+            message: overMsg
           });
         }
         if (min > 0 && text.length < min) {
@@ -674,7 +678,10 @@ function submitFeedback() {
       });
     });
 
+    var allText = fields.map(function (f) { return f.text; }).join(" ");
+    var emDashIssue = checkEmDashFrequency(allText);
     var allFieldIssues = charIssues.concat(headlineIssues);
+    if (emDashIssue) allFieldIssues.push(emDashIssue);
     var total = allMatches.length + allFieldIssues.length;
 
     if (btn) updateBadge(btn, total);
@@ -698,10 +705,24 @@ function submitFeedback() {
     if (aiCount > 0) parts.push(aiCount + " AI");
     if (charIssues.length > 0) parts.push(charIssues.length + " character limit");
     if (headlineIssues.length > 0) parts.push(headlineIssues.length + " headline");
+    if (emDashIssue) parts.push("1 AI frequency");
     resultsTitle.textContent = total + " issue" + (total !== 1 ? "s" : "") + " found (" + parts.join(", ") + ")";
 
     renderStructuredHighlights(fields, allMatches);
     renderIssueList(allMatches, allFieldIssues);
+  }
+
+  // ── Em Dash Frequency Check (AI tell) ────────────────────────
+
+  function checkEmDashFrequency(text) {
+    var count = (text.match(/\u2014/g) || []).length;
+    if (count > 2) {
+      return {
+        field: "AI tell",
+        message: "This copy uses " + count + " em dashes. More than two em dashes in a single piece of copy is a common AI tell — try rewriting some sentences to reduce them."
+      };
+    }
+    return null;
   }
 
   // ── Mode Switching ───────────────────────────────────────────
@@ -746,10 +767,14 @@ function submitFeedback() {
     }
 
     var matches = checkText(text);
+    var extraIssues = [];
+    var emDashIssue = checkEmDashFrequency(text);
+    if (emDashIssue) extraIssues.push(emDashIssue);
 
-    updateBadge(checkBtn, matches.length);
+    var total = matches.length + extraIssues.length;
+    updateBadge(checkBtn, total);
 
-    if (matches.length === 0) {
+    if (total === 0) {
       resultsSection.classList.add("hidden");
       emptyState.classList.remove("hidden");
       return;
@@ -766,10 +791,11 @@ function submitFeedback() {
     if (editorialCount > 0) parts.push(editorialCount + " editorial");
     if (jargonCount > 0) parts.push(jargonCount + " jargon");
     if (aiCount > 0) parts.push(aiCount + " AI");
-    resultsTitle.textContent = matches.length + " issue" + (matches.length !== 1 ? "s" : "") + " found (" + parts.join(", ") + ")";
+    if (extraIssues.length > 0) parts.push(extraIssues.length + " AI frequency");
+    resultsTitle.textContent = total + " issue" + (total !== 1 ? "s" : "") + " found (" + parts.join(", ") + ")";
 
     renderHighlights(text, matches);
-    renderIssueList(matches, []);
+    renderIssueList(matches, extraIssues);
   }
 
   function clearGeneral() {

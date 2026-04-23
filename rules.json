@@ -104,6 +104,14 @@
     "suggestion": "5:00 p.m."
   },
   {
+    "id": "jargon-colleague",
+    "type": "jargon",
+    "pattern": "\\bcolleague(s)?\\b",
+    "flags": "gi",
+    "message": "Overly formal — use a more natural, everyday word.",
+    "suggestion": "coworker, teammate"
+  },
+  {
     "id": "jargon-deep-dive",
     "type": "jargon",
     "pattern": "\\bdeep[- ]div(e|es|ed|ing)\\b",
@@ -706,9 +714,9 @@
   {
     "id": "editorial-am-pm-caps",
     "type": "editorial",
-    "pattern": "\\d\\s*(AM|PM|A\\.M\\.|P\\.M\\.|am|pm)\\b",
+    "pattern": "\\b(AM|PM|A\\.M\\.|P\\.M\\.|am|pm)\\b",
     "flags": "g",
-    "message": "Use lowercase with periods: \"a.m.\" and \"p.m.\" — not AM, PM, am, or pm.",
+    "message": "Use lowercase with periods: \"a.m.\" and \"p.m.\" — not A.M., P.M., AM, PM, am, or pm.",
     "suggestion": "a.m. / p.m."
   },
   {
