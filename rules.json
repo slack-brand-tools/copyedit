@@ -714,7 +714,7 @@
   {
     "id": "editorial-am-pm-caps",
     "type": "editorial",
-    "pattern": "\\b(AM|PM|A\\.M\\.|P\\.M\\.|am|pm)\\b",
+    "pattern": "\\b(AM|PM|am|pm)\\b|A\\.M\\.|P\\.M\\.",
     "flags": "g",
     "message": "Use lowercase with periods: \"a.m.\" and \"p.m.\" — not A.M., P.M., AM, PM, am, or pm.",
     "suggestion": "a.m. / p.m."
