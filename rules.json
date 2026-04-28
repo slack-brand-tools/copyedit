@@ -3054,5 +3054,501 @@
     "flags": "gi",
     "message": "AI intensifier — usually filler that can be cut.",
     "suggestion": "very, extremely, (or cut entirely)"
+  },
+  {
+    "id": "ai-is-a-testament",
+    "type": "ai",
+    "pattern": "\\bis a testament( to)?\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance of the subject.",
+    "suggestion": "shows, proves, demonstrates"
+  },
+  {
+    "id": "ai-is-a-reminder",
+    "type": "ai",
+    "pattern": "\\bis a reminder( that| of)?\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance of the subject.",
+    "suggestion": "shows, proves, (or cut entirely)"
+  },
+  {
+    "id": "ai-vital-role",
+    "type": "ai",
+    "pattern": "\\b(a )?(vital|significant|crucial|pivotal|key) (role|moment)\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance with vague superlatives.",
+    "suggestion": "be specific about the actual role or moment"
+  },
+  {
+    "id": "ai-highlights-importance",
+    "type": "ai",
+    "pattern": "\\b(underscores|highlights) (its |the )?(importance|significance)( of)?\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — tell the reader why it matters, don't just assert that it does.",
+    "suggestion": "show why it matters with specifics"
+  },
+  {
+    "id": "ai-reflects-broader",
+    "type": "ai",
+    "pattern": "\\breflects? broader\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — vague connection to unnamed trends.",
+    "suggestion": "name the specific trend, or cut"
+  },
+  {
+    "id": "ai-symbolizing-its",
+    "type": "ai",
+    "pattern": "\\bsymboliz(e|es|ed|ing) (its |the |a )?(ongoing|enduring|lasting)\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance with vague symbolism.",
+    "suggestion": "be specific about what it represents"
+  },
+  {
+    "id": "ai-setting-the-stage",
+    "type": "ai",
+    "pattern": "\\bsetting the stage for\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — cliché framing device.",
+    "suggestion": "leading to, making possible, (or cut entirely)"
+  },
+  {
+    "id": "ai-key-turning-point",
+    "type": "ai",
+    "pattern": "\\bkey turning point\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance.",
+    "suggestion": "turning point, shift, change"
+  },
+  {
+    "id": "ai-evolving-landscape",
+    "type": "ai",
+    "pattern": "\\b(evolving|shifting|changing) landscape\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — vague and overused.",
+    "suggestion": "name what's actually changing"
+  },
+  {
+    "id": "ai-focal-point",
+    "type": "ai",
+    "pattern": "\\bfocal point\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance.",
+    "suggestion": "focus, center, (or be specific)"
+  },
+  {
+    "id": "ai-indelible-mark",
+    "type": "ai",
+    "pattern": "\\bindelible mark\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — cliché.",
+    "suggestion": "lasting impact, (or describe the actual impact)"
+  },
+  {
+    "id": "ai-deeply-rooted",
+    "type": "ai",
+    "pattern": "\\bdeeply rooted\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — vague intensifier.",
+    "suggestion": "rooted in, based on, (or be specific)"
+  },
+  {
+    "id": "ai-represents-a-shift",
+    "type": "ai",
+    "pattern": "\\b(represents?|marks?) a (shift|turning point|milestone)\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — inflates importance.",
+    "suggestion": "say what actually changed"
+  },
+  {
+    "id": "ai-marking-shaping",
+    "type": "ai",
+    "pattern": "\\b(marking|shaping) the\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — vague framing of impact.",
+    "suggestion": "be specific about what was shaped or marked"
+  },
+  {
+    "id": "ai-contributing-to-the",
+    "type": "ai",
+    "pattern": "\\bcontributing to the\\b",
+    "flags": "gi",
+    "message": "AI significance puffery — vague attribution of impact.",
+    "suggestion": "say specifically how it contributed"
+  },
+  {
+    "id": "ai-media-outlets",
+    "type": "ai",
+    "pattern": "\\b(local|regional|national) media outlets\\b",
+    "flags": "gi",
+    "message": "AI notability puffery — vague attribution to unnamed sources.",
+    "suggestion": "name the specific outlet"
+  },
+  {
+    "id": "ai-profiled-in",
+    "type": "ai",
+    "pattern": "\\bprofiled in\\b",
+    "flags": "gi",
+    "message": "AI notability puffery — asserts importance through media coverage.",
+    "suggestion": "name the specific publication and what it said"
+  },
+  {
+    "id": "ai-leading-expert",
+    "type": "ai",
+    "pattern": "\\b(a |the )leading expert\\b",
+    "flags": "gi",
+    "message": "AI notability puffery — vague authority claim.",
+    "suggestion": "name the person"
+  },
+  {
+    "id": "ai-valuable-insights",
+    "type": "ai",
+    "pattern": "\\bvaluable insights\\b",
+    "flags": "gi",
+    "message": "AI superficial analysis — asserts value without showing it.",
+    "suggestion": "say what the insights actually are"
+  },
+  {
+    "id": "ai-align-with",
+    "type": "ai",
+    "pattern": "\\balign(s|ed|ing)? with\\b",
+    "flags": "gi",
+    "message": "AI filler — vague connection word.",
+    "suggestion": "match, fit, support, (or be specific)"
+  },
+  {
+    "id": "ai-resonate-with",
+    "type": "ai",
+    "pattern": "\\bresonat(e|es|ed|ing) with\\b",
+    "flags": "gi",
+    "message": "AI filler — vague and overused.",
+    "suggestion": "connect with, appeal to, (or be specific)"
+  },
+  {
+    "id": "ai-cultivating",
+    "type": "ai",
+    "pattern": "\\bcultivat(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "AI filler — sounds formal and inflated.",
+    "suggestion": "build, grow, develop"
+  },
+  {
+    "id": "ai-encompassing",
+    "type": "ai",
+    "pattern": "\\bencompass(es|ed|ing)?\\b",
+    "flags": "gi",
+    "message": "AI filler — sounds formal and inflated.",
+    "suggestion": "include, cover, span"
+  },
+  {
+    "id": "ai-boasts-a",
+    "type": "ai",
+    "pattern": "\\bboasts? (a|an|the)\\b",
+    "flags": "gi",
+    "message": "AI promotional language — inflated substitute for 'has.'",
+    "suggestion": "has, includes, offers"
+  },
+  {
+    "id": "ai-vibrant",
+    "type": "ai",
+    "pattern": "\\bvibrant\\b",
+    "flags": "gi",
+    "message": "AI promotional language — overused and vague.",
+    "suggestion": "lively, active, (or describe specifically)"
+  },
+  {
+    "id": "ai-profound",
+    "type": "ai",
+    "pattern": "\\bprofound(ly)?\\b",
+    "flags": "gi",
+    "message": "AI promotional language — inflates significance.",
+    "suggestion": "deep, significant, (or cut entirely)"
+  },
+  {
+    "id": "ai-showcasing",
+    "type": "ai",
+    "pattern": "\\bshowcas(e|es|ed|ing)\\b",
+    "flags": "gi",
+    "message": "AI promotional language — overused and inflated.",
+    "suggestion": "show, display, feature"
+  },
+  {
+    "id": "ai-exemplifies",
+    "type": "ai",
+    "pattern": "\\bexemplif(y|ies|ied|ying)\\b",
+    "flags": "gi",
+    "message": "AI promotional language — sounds academic and inflated.",
+    "suggestion": "shows, is a good example of"
+  },
+  {
+    "id": "ai-commitment-to",
+    "type": "ai",
+    "pattern": "\\bcommitment to\\b",
+    "flags": "gi",
+    "message": "AI promotional language — vague corporate phrasing.",
+    "suggestion": "say what's actually being done"
+  },
+  {
+    "id": "ai-nestled",
+    "type": "ai",
+    "pattern": "\\bnestled\\b",
+    "flags": "gi",
+    "message": "AI promotional language — travel-guide cliché.",
+    "suggestion": "located, situated, (or just name the place)"
+  },
+  {
+    "id": "ai-in-the-heart-of",
+    "type": "ai",
+    "pattern": "\\bin the heart of\\b",
+    "flags": "gi",
+    "message": "AI promotional language — travel-guide cliché.",
+    "suggestion": "in, in central, in downtown"
+  },
+  {
+    "id": "ai-renowned",
+    "type": "ai",
+    "pattern": "\\brenowned\\b",
+    "flags": "gi",
+    "message": "AI promotional language — asserts fame without evidence.",
+    "suggestion": "well-known, popular, (or say why)"
+  },
+  {
+    "id": "ai-diverse-array",
+    "type": "ai",
+    "pattern": "\\bdiverse array\\b",
+    "flags": "gi",
+    "message": "AI promotional language — vague and inflated.",
+    "suggestion": "range, mix, variety"
+  },
+  {
+    "id": "ai-experts-argue",
+    "type": "ai",
+    "pattern": "\\b(experts?|observers?|critics?) (argue|say|suggest|believe|note|have cited)\\b",
+    "flags": "gi",
+    "message": "AI vague attribution — name the actual person or source.",
+    "suggestion": "name the specific expert or source"
+  },
+  {
+    "id": "ai-industry-reports",
+    "type": "ai",
+    "pattern": "\\bindustry reports\\b",
+    "flags": "gi",
+    "message": "AI vague attribution — which reports?",
+    "suggestion": "name the specific report"
+  },
+  {
+    "id": "ai-despite-challenges",
+    "type": "ai",
+    "pattern": "\\bdespite (its|these|the) challenges\\b",
+    "flags": "gi",
+    "message": "AI formula — the 'despite challenges' pattern is a telltale rigid structure.",
+    "suggestion": "restructure to address the challenges directly"
+  },
+  {
+    "id": "ai-faces-challenges",
+    "type": "ai",
+    "pattern": "\\bfaces? (several |numerous |many |significant )?challenges\\b",
+    "flags": "gi",
+    "message": "AI formula — the 'faces challenges' pattern is a telltale rigid structure.",
+    "suggestion": "name the specific challenges directly"
+  },
+  {
+    "id": "ai-future-outlook",
+    "type": "ai",
+    "pattern": "\\bfuture (outlook|prospects)\\b",
+    "flags": "gi",
+    "message": "AI formula — rigid outline-like section heading.",
+    "suggestion": "what's next, looking ahead, (or just say what's coming)"
+  },
+  {
+    "id": "ai-additionally-start",
+    "type": "ai",
+    "pattern": "^Additionally[,.]",
+    "flags": "gm",
+    "message": "AI vocabulary — LLMs overuse 'Additionally' to start sentences.",
+    "suggestion": "also, and, plus, (or restructure)"
+  },
+  {
+    "id": "ai-garner",
+    "type": "ai",
+    "pattern": "\\bgarnere?(s|d|ing)?\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — formal and overused in AI text.",
+    "suggestion": "get, earn, attract, win"
+  },
+  {
+    "id": "ai-interplay",
+    "type": "ai",
+    "pattern": "\\binterplay\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — sounds academic and inflated.",
+    "suggestion": "relationship, connection, interaction"
+  },
+  {
+    "id": "ai-intricate",
+    "type": "ai",
+    "pattern": "\\bintricat(e|es|ely)|intricacies\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused to sound sophisticated.",
+    "suggestion": "complex, detailed, complicated"
+  },
+  {
+    "id": "ai-meticulous",
+    "type": "ai",
+    "pattern": "\\bmeticulous(ly)?\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused to sound sophisticated.",
+    "suggestion": "careful, thorough, precise"
+  },
+  {
+    "id": "ai-robust",
+    "type": "ai",
+    "pattern": "\\brobust\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused and vague.",
+    "suggestion": "strong, reliable, thorough"
+  },
+  {
+    "id": "ai-tapestry",
+    "type": "ai",
+    "pattern": "\\btapestry\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused abstract metaphor.",
+    "suggestion": "mix, blend, range, (or cut entirely)"
+  },
+  {
+    "id": "ai-testament",
+    "type": "ai",
+    "pattern": "\\btestament( to)?\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused significance word.",
+    "suggestion": "proof, evidence, sign"
+  },
+  {
+    "id": "ai-enduring",
+    "type": "ai",
+    "pattern": "\\benduring\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused to inflate lasting importance.",
+    "suggestion": "lasting, long-running, (or be specific)"
+  },
+  {
+    "id": "ai-enhance",
+    "type": "ai",
+    "pattern": "\\benhance(s|d|ing|ment)?\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused and vague.",
+    "suggestion": "improve, boost, strengthen"
+  },
+  {
+    "id": "ai-crucial",
+    "type": "ai",
+    "pattern": "\\bcrucial(ly)?\\b",
+    "flags": "gi",
+    "message": "AI vocabulary — overused significance word.",
+    "suggestion": "important, key, critical, (or show why it matters)"
+  },
+  {
+    "id": "ai-stands-as-a",
+    "type": "ai",
+    "pattern": "\\bstands as (a|an|the)\\b",
+    "flags": "gi",
+    "message": "AI copulative avoidance — inflated substitute for 'is.'",
+    "suggestion": "is"
+  },
+  {
+    "id": "ai-marks-a",
+    "type": "ai",
+    "pattern": "\\bmarks? (a|an|the)\\b",
+    "flags": "gi",
+    "message": "AI copulative avoidance — inflated substitute for 'is.'",
+    "suggestion": "is"
+  },
+  {
+    "id": "ai-represents-a",
+    "type": "ai",
+    "pattern": "\\brepresents? (a|an|the)\\b",
+    "flags": "gi",
+    "message": "AI copulative avoidance — inflated substitute for 'is.'",
+    "suggestion": "is"
+  },
+  {
+    "id": "ai-features-a",
+    "type": "ai",
+    "pattern": "\\bfeatures? (a|an|the)\\b",
+    "flags": "gi",
+    "message": "AI copulative avoidance — inflated substitute for 'has.'",
+    "suggestion": "has, includes"
+  },
+  {
+    "id": "ai-maintains-a",
+    "type": "ai",
+    "pattern": "\\bmaintains? (a|an|the)\\b",
+    "flags": "gi",
+    "message": "AI copulative avoidance — inflated substitute for 'has' or 'keeps.'",
+    "suggestion": "has, keeps"
+  },
+  {
+    "id": "ai-i-hope-this-helps",
+    "type": "ai",
+    "pattern": "\\bI hope this helps\\b",
+    "flags": "gi",
+    "message": "AI chatbot phrase — dead giveaway of AI-generated text.",
+    "suggestion": "(cut entirely)"
+  },
+  {
+    "id": "ai-of-course-excl",
+    "type": "ai",
+    "pattern": "\\bOf course!",
+    "flags": "g",
+    "message": "AI chatbot phrase — overly eager collaborative tone.",
+    "suggestion": "(cut entirely or rephrase naturally)"
+  },
+  {
+    "id": "ai-certainly-excl",
+    "type": "ai",
+    "pattern": "\\bCertainly!",
+    "flags": "g",
+    "message": "AI chatbot phrase — overly eager collaborative tone.",
+    "suggestion": "(cut entirely or rephrase naturally)"
+  },
+  {
+    "id": "ai-absolutely-right",
+    "type": "ai",
+    "pattern": "\\b[Yy]ou'?re absolutely right\\b",
+    "flags": "g",
+    "message": "AI chatbot phrase — sycophantic agreement pattern.",
+    "suggestion": "(cut entirely)"
+  },
+  {
+    "id": "ai-would-you-like",
+    "type": "ai",
+    "pattern": "\\bWould you like (me to|to see|more|a)\\b",
+    "flags": "g",
+    "message": "AI chatbot phrase — conversational AI pattern.",
+    "suggestion": "(cut entirely or rephrase)"
+  },
+  {
+    "id": "ai-anything-else",
+    "type": "ai",
+    "pattern": "\\bis there anything else\\b",
+    "flags": "gi",
+    "message": "AI chatbot phrase — customer service bot pattern.",
+    "suggestion": "(cut entirely)"
+  },
+  {
+    "id": "ai-detailed-breakdown",
+    "type": "ai",
+    "pattern": "\\b(more )?detailed breakdown\\b",
+    "flags": "gi",
+    "message": "AI chatbot phrase — common AI framing.",
+    "suggestion": "details, specifics, breakdown"
+  },
+  {
+    "id": "ai-here-is-a",
+    "type": "ai",
+    "pattern": "\\b[Hh]ere is (a|an|the)\\b",
+    "flags": "g",
+    "message": "AI chatbot phrase — common AI text framing.",
+    "suggestion": "(restructure to lead with the content itself)"
   }
 ]
